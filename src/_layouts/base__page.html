@@ -1,0 +1,36 @@
+---
+layout: base
+---
+
+{% assign hero = page.hero | default: "/assets/img/content/hero-1.png" %}
+
+<!-- HERO -->
+<div class="lv-hero-wrapper">
+    <div class="lv-hero has-fixed-height">
+        <div class="lv-hero-item" style="background-image: url('{{ hero }}')">
+        	<div class="container">
+        	    <div class="lv-hero-item-caption animated fadeInLeft">
+
+                    <h1><img src="/assets/img/content/logo-kawasaki.png" alt="Kawasaki"></h1>
+
+                    <div class="row justify-content-end">
+                        <div class="col-md-4">
+                            <ul class="list-unstyled text-right">
+                                <li><a class="btn-tile" href="#"><h2>New Bikes <i class="fa fa-angle-right"></i></h2></a></li>
+                                <li><a class="btn-tile" href="#"><h2>Specials <i class="fa fa-angle-right"></i></h2></a></li>
+                                <li><a class="btn-tile" href="#"><h2>Promotions <i class="fa fa-angle-right"></i></h2></a></li>
+                                <li><a class="btn-tile" href="#"><h2>Used Bikes <i class="fa fa-angle-right"></i></h2></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+        	    </div>
+        	</div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer mb-4"></div>
+
+{{ content }}

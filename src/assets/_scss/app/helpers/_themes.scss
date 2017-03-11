@@ -1,0 +1,63 @@
+/*
+    THEMES.CSS
+
+    - Last updated: 10.03.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// THEME HOME
+//-----------------------------------------------------------------
+
+.theme-home {
+
+	//=========================================
+	// TOP
+	//=========================================
+
+	.headroom--top {
+		.global-header-body::after {
+			@include media-breakpoint-up(md) {
+				display: none; // no nav BG for homepage
+			}
+		}
+	}
+
+	//=========================================
+	// NOT TOP (SCROLLING)
+	//=========================================
+
+	.headroom--top {
+		.global-header-body .logo {
+			@include media-breakpoint-up(md) {
+			    margin-top: 30px;
+			}
+
+			@include media-breakpoint-up(xl) {
+			    margin-top: 40px;
+			}
+
+		 	img {
+		 		@include media-breakpoint-up(md) {
+		 			width: 364px;
+		 		}
+
+		 		@include media-breakpoint-up(lg) {
+		 			width: 472px;
+		 		}
+		 	}
+		}
+	}
+
+	// .lv-hero-item-caption {
+	// 	@include media-breakpoint-down(sm) {
+	// 	    padding-top: calc(#{rem-calc(110)} + #{$header-sm-height} + #{rem-calc(32)});
+	// 	}
+	// }
+}
+
+//=========================================
+//
+//=========================================

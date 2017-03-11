@@ -1,0 +1,62 @@
+{% comment %}
+    LIQUIDVISUAL-HERO
+
+    - updated: 26.02.17
+    - notes:
+        * Multiple items in carousel_slides.yml triggers carousel mode
+        * .has-auto-height - caption will detemine height
+        * .has-fixed-height - used for internal pages to set a height
+{% endcomment %}
+
+{% assign hero = page.hero %}
+
+<div class="lv-hero-wrapper">
+
+    <!-- HERO -->
+    <div class="lv-hero">
+
+        <!-- HERO ITEM -->
+        <div class="lv-hero-item" style="background-image: url('{{ hero }}')">
+            <div class="container">
+                <div class="lv-hero-item-caption animated fadeInLeft">
+
+                    <h1>Adelaide's Yamaha, KTM &amp; Kawasaki motorcycle specialists...</h1>
+
+                    <div class="spacer mb-4"></div>
+
+                    <!-- MEDIA TILES -->
+                    <ul class="block-grid-xs-1 block-grid-md-2 block-grid-condensed">
+                        <li>
+                            <a class="media-tile" href="#">
+                                <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-1.jpg')"></div>
+                                <h2><img src="/assets/img/content/logo-yamaha.png" alt="Yamaha"></h2>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="media-tile" href="#">
+                                <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-2.jpg')"></div>
+                                <h2><img src="/assets/img/content/logo-ktm.png" alt="KTM"></h2>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="media-tile" href="#">
+                                <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-3.jpg')"></div>
+                                <h2><img src="/assets/img/content/logo-kawasaki.png" alt="Kawasaki"></h2>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="media-tile" href="#">
+                                <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-4.jpg')"></div>
+                                <h2>Used Bikes</h2>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- /.lv-hero-item -->
+    </div> <!-- /.lv-hero -->
+</div> <!-- /.lv-hero-wrapper -->

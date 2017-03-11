@@ -1,0 +1,50 @@
+- title: Home
+  url: /
+
+- title: Yamaha
+  url: /yamaha/
+
+- title: KTM
+  url: /ktm/
+
+- title: Kawasaki
+  url: /kawasaki/
+  include_children_in_nav: false
+  children:
+    - title: New Bikes
+      url: /kawasaki/new-bikes/
+      include_children_in_nav: false
+      children:
+        - title: Bike Item
+          url: /kawasaki/new-bikes/bike-item/
+
+    - title: Specials
+      url: /kawasaki/specials/
+
+    - title: Promotions
+      url: /kawasaki/promotions/
+
+    - title: Accessories
+      url: /kawasaki/accessories/
+
+    - title: Used Bikes
+      url: /kawasaki/used-bikes/
+
+- title: Used Bikes
+  url: /used-bikes/
+  include_children_in_nav: false
+  children:
+    - title: Kawasaki
+      url: /used-bikes/kawasaki/
+
+- title: Service
+  url: /service/
+
+- title: Spare Parts
+  url: /spare-parts/
+
+- title: About
+  url: /about/
+
+- title: Contact
+  url: /contact/

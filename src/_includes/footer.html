@@ -1,0 +1,63 @@
+{% assign settings = site.data.settings %}
+
+<!-- FOOTER TOP -->
+<section class="global-footer-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+
+				<!-- LOGO -->
+				<a class="logo" href="/" title="{{ settings.title_homepage }}" itemprop="url">
+				    <img width="100%" src="{{ logo }}" alt="{{ settings.company }}" itemprop="logo">
+				</a>
+
+				<p><a href=""><i class="fa fa-phone"></i> {{ settings.offices[0].phone }}</a><br>
+				<a href=""><i class="fa fa-envelope"></i> {{ settings.offices[0].email }}</a></p>
+
+				<p><a href=""><i class="fa fa-facebook"></i></a> <a href=""><i class="fa fa-instagram"></i></a></p>
+
+			</div>
+			<div class="col-md-5">
+
+				<!-- OUR LOCATIONS -->
+				<div class="global-footer-panel">
+					<h3><i class="fa fa-map-marker"></i> Our Locations</h3>
+					<div class="row">
+						<div class="col-md-6">
+							<h4><i class="fa fa-map-marker"></i> Our Locations</h4>
+							<address>{{ settings.offices[0].address }}</address>
+							<a href="#">View map <i class="fa fa-angle-right"></i></a>
+						</div>
+						<div class="col-md-6">
+							<h4>KTM &amp; Kawasaki Showroom</h4>
+							<address>{{ settings.offices[1].address }}</address>
+							<a href="#">View map <i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+
+				<!-- TRADING HOURS -->
+				<div class="global-footer-panel text-right">
+					<h3><i class="fa fa-clock"></i> Trading Hours</h3>
+					<p>{{ settings.offices[0].trading_hours }}</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER BOTTOM -->
+<section class="global-footer-bottom py-3">
+    <div class="container text-right">
+        <small>
+        	<a class="author-logo pull-xs-right" target="_blank" href="{{ settings.author.url }}">
+            	<span class="text">{{ settings.author.description }}</span>
+            	<img width="16" height="16" src="{{ settings.author.logo }}" alt="Created by {{ settings.author.title }}">
+        	</a>
+        </small>
+    </div>
+</section>

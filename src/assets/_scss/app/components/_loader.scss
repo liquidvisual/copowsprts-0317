@@ -1,0 +1,97 @@
+/*
+    LOADER.CSS
+
+    - Last updated: 24.02.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// LOADER
+//-----------------------------------------------------------------
+
+.lv-page-loader {
+    display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333333;
+	z-index: 2147483647;
+    animation: page-loader-fadeout 1s ease 1.2s alternate 1 forwards;
+}
+
+//-----------------------------------------------------------------
+// DEV LOADER TURNED OFF FOR SPEED
+//-----------------------------------------------------------------
+
+html[data-dev-mode] .lv-page-loader {
+    visibility: hidden;
+}
+
+//-----------------------------------------------------------------
+// DISAPPEAR AFTER DELAY
+//-----------------------------------------------------------------
+
+@keyframes page-loader-fadeout {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+//-----------------------------------------------------------------
+// SPINNER
+//-----------------------------------------------------------------
+
+.lv-page-loader-spinner {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+
+    > div {
+      background-color: white;
+      height: 100%;
+      width: 6px;
+      display: inline-block;
+      animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }
+}
+
+//-----------------------------------------------------------------
+// ANIMATED ELEMENTS
+//-----------------------------------------------------------------
+
+.lv-page-loader-spinner {
+    .rect-2 {
+        animation-delay: -1.1s;
+    }
+    .rect-3 {
+        animation-delay: -1.0s;
+    }
+    .rect-4 {
+        animation-delay: -0.9s;
+    }
+    .rect-5 {
+        animation-delay: -0.8s;
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        text-indent: -9999px;
+    }  20% {
+        transform: scaleY(1.0);
+    }
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
