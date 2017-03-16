@@ -18,9 +18,17 @@
 	//=========================================
 
 	.headroom--top {
+
+		// Not used anymore, but may in future
 		.global-header-body::after {
 			@include media-breakpoint-up(md) {
 				display: none; // no nav BG for homepage
+			}
+		}
+
+		.global-header-body {
+			@include media-breakpoint-up(md) {
+			    background: none;
 			}
 		}
 	}
@@ -56,6 +64,21 @@
 	// 	    padding-top: calc(#{rem-calc(110)} + #{$header-sm-height} + #{rem-calc(32)});
 	// 	}
 	// }
+
+	//=========================================
+	// REMOVE THIS - QUICKIE
+	//=========================================
+
+	.lv-hero-item-caption {
+	    // margin: rem-calc(80 0);
+	    // background: red;
+
+	    h1 {
+	        position: static;
+	        // font-size: rem-calc(23);
+	        // color: white;
+	    }
+	}
 }
 
 //=========================================

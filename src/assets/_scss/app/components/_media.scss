@@ -19,6 +19,7 @@
 	height: rem-calc(85);
 	padding: $spacer;
 	overflow: hidden;
+	z-index: 1;
 
 	@include media-breakpoint-up(md) {
 	    height: rem-calc(209);
