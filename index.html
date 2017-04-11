@@ -9,7 +9,6 @@
 
     <!-- CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800">
 
     <!-- FAV ICONS -->
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -53,7 +52,7 @@
                         </div>
                         <div class="col-6 text-right">
                             <i class="fa fa-map-marker"></i>
-                            <span class="text hidden-sm-down">&nbsp; 212 & 218 Main South Road, Morphett Vale, SA 5162</span>
+                            <span class="text hidden-sm-down">&nbsp;212 & 218 Main South Road, Morphett Vale, SA 5162</span>
                         </div>
                     </div>
                 </div>
@@ -87,29 +86,31 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a class="top-parent-anchor" href="/yamaha/">
+                                <span class="top-parent-anchor">
                                     <span class="text">Yamaha</span>
-                                </a>
+                                </span>
                             </li>
-                            <li class="">
+                            <li class="has-dropdown">
                                 <a class="top-parent-anchor" href="/ktm/">
                                     <span class="text">KTM</span>
                                 </a>
-                            </li>
-                            <li class="has-dropdown has-dropdown-right-aligned">
-                                <a class="top-parent-anchor" href="/kawasaki/">
-                                    <span class="text">Kawasaki</span>
-                                </a>
-                                <ul class="dropdown" data-parent="Kawasaki">
+                                <ul class="dropdown is-nav-included" data-parent="KTM">
                                     <li class="has-dropdown">
-                                        <a href="/kawasaki/new-bikes/">
+                                        <a href="/ktm/new-bikes/">
                                             <span class="text">New Bikes</span>
                                         </a>
                                         <ul class="dropdown" data-parent="New Bikes">
-                                            <li>
-                                                <a href="/kawasaki/new-bikes/bike-item/">
-                                                    <span class="text">Bike Item</span>
+                                            <li class="has-dropdown">
+                                                <a href="/ktm/new-bikes/mx/">
+                                                    <span class="text">MX</span>
                                                 </a>
+                                                <ul class="dropdown" data-parent="MX">
+                                                    <li>
+                                                        <a href="/ktm/new-bikes/mx/450-sx-f-factory-edition/">
+                                                            <span class="text">450 SX-F Factory Edition</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </li>
@@ -135,17 +136,56 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="has-dropdown has-dropdown-right-aligned">
-                                <a class="top-parent-anchor" href="/used-bikes/">
-                                    <span class="text">Used Bikes</span>
+                            <li class="has-dropdown">
+                                <a class="top-parent-anchor" href="/kawasaki/">
+                                    <span class="text">Kawasaki</span>
                                 </a>
-                                <ul class="dropdown" data-parent="Used Bikes">
+                                <ul class="dropdown is-nav-included" data-parent="Kawasaki">
+                                    <li class="has-dropdown">
+                                        <a href="/kawasaki/new-bikes/">
+                                            <span class="text">New Bikes</span>
+                                        </a>
+                                        <ul class="dropdown" data-parent="New Bikes">
+                                            <li class="has-dropdown">
+                                                <a href="/kawasaki/new-bikes/mx/">
+                                                    <span class="text">MX</span>
+                                                </a>
+                                                <ul class="dropdown" data-parent="MX">
+                                                    <li>
+                                                        <a href="/kawasaki/new-bikes/mx/450-sx-f-factory-edition/">
+                                                            <span class="text">450 SX-F Factory Edition</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li class="">
-                                        <a href="/used-bikes/kawasaki/">
-                                            <span class="text">Kawasaki</span>
+                                        <a href="/kawasaki/specials/">
+                                            <span class="text">Specials</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/kawasaki/promotions/">
+                                            <span class="text">Promotions</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/kawasaki/accessories/">
+                                            <span class="text">Accessories</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/kawasaki/used-bikes/">
+                                            <span class="text">Used Bikes</span>
                                         </a>
                                     </li>
                                 </ul>
+                            </li>
+                            <li class="">
+                                <a class="top-parent-anchor" href="/used-bikes/">
+                                    <span class="text">Used Bikes</span>
+                                </a>
                             </li>
                             <li class="">
                                 <a class="top-parent-anchor" href="/service/">
@@ -180,43 +220,33 @@
                 <!-- HERO ITEM -->
                 <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero-1.jpg')">
                     <div class="container">
-                        <div class="lv-hero-item-caption animated fadeInLeft">
+                        <div class="lv-hero-item-caption mt-auto">
                             <h1>Adelaide's Yamaha, KTM &amp; Kawasaki motorcycle specialists...</h1>
                             <div class="spacer mb-4"></div>
 
                             <!-- MEDIA TILES -->
                             <ul class="block-grid-xs-1 block-grid-md-2 block-grid-condensed">
                                 <li>
-                                    <a class="media-tile" href="#">
-                                        <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-1.jpg')"></div>
-                                        <h2>
-                                            <img src="/assets/img/content/logo-yamaha.png" alt="Yamaha">
-                                        </h2>
+                                    <a class="media-tile" href="#" title="Yamaha">
+                                        <img width="100%" src="/assets/img/layout/media-tile-1a.jpg" alt="Yamaha">
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="media-tile" href="#">
-                                        <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-2.jpg')"></div>
-                                        <h2>
-                                            <img src="/assets/img/content/logo-ktm.png" alt="KTM">
-                                        </h2>
+                                    <a class="media-tile" href="#" title="KTM">
+                                        <img width="100%" src="/assets/img/layout/media-tile-2a.jpg" alt="KTM">
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="media-tile" href="#">
-                                        <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-3.jpg')"></div>
-                                        <h2>
-                                            <img src="/assets/img/content/logo-kawasaki.png" alt="Kawasaki">
-                                        </h2>
+                                    <a class="media-tile" href="#" title="Kawasaki">
+                                        <img width="100%" src="/assets/img/layout/media-tile-3a.jpg" alt="Kawasaki">
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="media-tile" href="#">
-                                        <div class="media-tile-bg" style="background-image: url('/assets/img/layout/media-tile-4.jpg')"></div>
-                                        <h2>Used Bikes</h2>
+                                    <a class="media-tile" href="#" title="Used Bikes">
+                                        <img width="100%" src="/assets/img/layout/media-tile-4a.jpg" alt="Used Bikes">
                                         <i class="fa fa-angle-right"></i>
                                     </a>
                                 </li>
@@ -232,26 +262,8 @@
             </div>
 
         <!-- /.lv-hero-wrapper -->
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2>H2. Header</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="global-footer">
+        
+<!-- FOOTER --><footer class="global-footer">
 
             <!-- FOOTER TOP -->
             <section class="global-footer-top">
@@ -260,56 +272,67 @@
                         <div class="col-md-3">
 
                             <!-- LOGO -->
-                            <a class="logo" href="/" title="Coast Powersports" itemprop="url">
-                                <img width="100%" src="/assets/img/content/logo@2x.png" alt="Coast Powersports" itemprop="logo">
-                            </a>
-                            <p>
-                                <a href="">
-                                    <i class="fa fa-phone"></i> (08) 8382 5581</a>
+                            <p class="mb-3">
+                                <a class="logo" href="/" title="Coast Powersports" itemprop="url">
+                                    <img width="280" src="/assets/img/content/logo@2x.png" alt="Coast Powersports" itemprop="logo">
+                                </a>
+                            </p>
+
+                            <!-- CONTACTS -->
+                            <p class="mb-3">
+                                <a href="(08) 8382 5581">
+                                    <i class="fa fa-phone"></i>&nbsp; (08) 8382 5581</a>
                                 <br>
-                                <a href="">
-                                    <i class="fa fa-envelope"></i> hello@coastpowersports.com.au</a>
+                                <a href="hello@coastpowersports.com.au">
+                                    <i class="fa fa-envelope"></i>&nbsp; hello@coastpowersports.com.au</a>
                             </p>
-                            <p>
-                                <a href="">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </p>
+
+                            <!-- SOCIAL MEDIA -->
+                            <ul class="social-media mb-3">
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/coastpowersports/">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="https://www.instagram.com/coastpowersports/">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 d-flex">
 
                             <!-- OUR LOCATIONS -->
                             <div class="global-footer-panel">
-                                <h3>
-                                    <i class="fa fa-map-marker"></i> Our Locations</h3>
+                                <h4 class="mb-3 h5">
+                                    <i class="fa fa-map-marker"></i>&nbsp; Our Locations</h4>
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <h4>
-                                            <i class="fa fa-map-marker"></i> Our Locations</h4>
-                                        <address>212 Main South Road, Morphett Vale, SA 5162</address>
-                                        <a href="#">View map
+                                    <div class="col">
+                                        <h5 class="mb-1">Yamaha Showroom</h5>
+                                        <address class="mb-0">212 Main South Road,
+                                            <br>Morphett Vale, SA 5162</address>
+                                        <a href="/contact/#yamaha-showroom">View map
                                             <i class="fa fa-angle-right"></i>
                                         </a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <h4>KTM &amp; Kawasaki Showroom</h4>
-                                        <address>218 Main South Road, Morphett Vale, SA 5162</address>
-                                        <a href="#">View map
+                                    <div class="col col-xl-7">
+                                        <h5 class="mb-1">KTM & Kawasaki Showroom</h5>
+                                        <address class="mb-0">218 Main South Road,
+                                            <br>Morphett Vale, SA 5162</address>
+                                        <a href="/contact/#ktm-kawasaki-showroom">View map
                                             <i class="fa fa-angle-right"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3 offset-md-1 d-flex">
 
                             <!-- TRADING HOURS -->
                             <div class="global-footer-panel text-right">
-                                <h3>
-                                    <i class="fa fa-clock"></i> Trading Hours</h3>
+                                <h4 class="mb-3 h5">
+                                    <i class="fa fa-clock-o"></i>&nbsp; Trading Hours</h4>
                                 <p>Monday - Friday : 9.00am - 5.30pm
                                     <br>Thursday : 9.00am - 7.00pm
                                     <br>Saturday : 9.00am - 1.00pm</p>
@@ -324,8 +347,8 @@
                 <div class="container text-right">
                     <small>
                         <a class="author-logo pull-xs-right" target="_blank" href="http://muchmedia.com.au">
-                            <span class="text">Website by Much Media</span>
-                            <img width="16" height="16" src="/assets/img/ui/much-media-logo.svg" alt="Created by Much Media">
+                            <span class="text">Website by Much Media</span>&nbsp;&nbsp;
+                            <img width="20" height="20" src="/assets/img/ui/much-media-logo.svg" alt="Created by Much Media">
                         </a>
                     </small>
                 </div>
@@ -343,29 +366,31 @@
                 </a>
             </li>
             <li class="">
-                <a class="top-parent-anchor" href="/yamaha/">
+                <span class="top-parent-anchor">
                     <span class="text">Yamaha</span>
-                </a>
+                </span>
             </li>
-            <li class="">
+            <li class="has-dropdown">
                 <a class="top-parent-anchor" href="/ktm/">
                     <span class="text">KTM</span>
                 </a>
-            </li>
-            <li class="has-dropdown has-dropdown-right-aligned">
-                <a class="top-parent-anchor" href="/kawasaki/">
-                    <span class="text">Kawasaki</span>
-                </a>
-                <ul class="dropdown" data-parent="Kawasaki">
+                <ul class="dropdown is-nav-included" data-parent="KTM">
                     <li class="has-dropdown">
-                        <a href="/kawasaki/new-bikes/">
+                        <a href="/ktm/new-bikes/">
                             <span class="text">New Bikes</span>
                         </a>
                         <ul class="dropdown" data-parent="New Bikes">
-                            <li>
-                                <a href="/kawasaki/new-bikes/bike-item/">
-                                    <span class="text">Bike Item</span>
+                            <li class="has-dropdown">
+                                <a href="/ktm/new-bikes/mx/">
+                                    <span class="text">MX</span>
                                 </a>
+                                <ul class="dropdown" data-parent="MX">
+                                    <li>
+                                        <a href="/ktm/new-bikes/mx/450-sx-f-factory-edition/">
+                                            <span class="text">450 SX-F Factory Edition</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -391,17 +416,56 @@
                     </li>
                 </ul>
             </li>
-            <li class="has-dropdown has-dropdown-right-aligned">
-                <a class="top-parent-anchor" href="/used-bikes/">
-                    <span class="text">Used Bikes</span>
+            <li class="has-dropdown">
+                <a class="top-parent-anchor" href="/kawasaki/">
+                    <span class="text">Kawasaki</span>
                 </a>
-                <ul class="dropdown" data-parent="Used Bikes">
+                <ul class="dropdown is-nav-included" data-parent="Kawasaki">
+                    <li class="has-dropdown">
+                        <a href="/kawasaki/new-bikes/">
+                            <span class="text">New Bikes</span>
+                        </a>
+                        <ul class="dropdown" data-parent="New Bikes">
+                            <li class="has-dropdown">
+                                <a href="/kawasaki/new-bikes/mx/">
+                                    <span class="text">MX</span>
+                                </a>
+                                <ul class="dropdown" data-parent="MX">
+                                    <li>
+                                        <a href="/kawasaki/new-bikes/mx/450-sx-f-factory-edition/">
+                                            <span class="text">450 SX-F Factory Edition</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="">
-                        <a href="/used-bikes/kawasaki/">
-                            <span class="text">Kawasaki</span>
+                        <a href="/kawasaki/specials/">
+                            <span class="text">Specials</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/kawasaki/promotions/">
+                            <span class="text">Promotions</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/kawasaki/accessories/">
+                            <span class="text">Accessories</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/kawasaki/used-bikes/">
+                            <span class="text">Used Bikes</span>
                         </a>
                     </li>
                 </ul>
+            </li>
+            <li class="">
+                <a class="top-parent-anchor" href="/used-bikes/">
+                    <span class="text">Used Bikes</span>
+                </a>
             </li>
             <li class="">
                 <a class="top-parent-anchor" href="/service/">
@@ -436,6 +500,41 @@
 
     <!-- **** JAVASCRIPT **** -->
     <script src="/assets/scripts/minified.js"></script>
+    <script>
+    $(window).on('load', function() {
+        $('.social-feed-container').socialfeed({
+            // FACEBOOK
+            facebook: {
+                accounts: ['@coastpowersports'],
+                limit: 4,
+                access_token: '1142564202455221|3a2db052ca1e71a576329b99b7d55a5b'
+            },
+            // INSTAGRAM
+            instagram: {
+                accounts: ['@coastpowersports'],
+                limit: 4,
+                //client_id: '88b4730e0e2c4b2f8a09a6184af2e218',
+                //access_token: ''
+                client_id: 'aa2ef3e8118541c0b7c372cfd81e752b',
+                access_token: '3178942332.e029fea.ab1887d8d8024dd69d8b1dafbbfa773b'
+            },
+            // GENERAL SETTINGS
+            length: 200,
+            show_media: true,
+            template: "/social-feed/",
+            // When all the posts are collected and displayed - this function is evoked
+            callback: function() {
+                console.log('all posts are collected');
+                setTimeout(function() {
+                    $('.social-feed-container').masonry();
+                    setTimeout(function() {
+                        $('.social-feed-container').masonry();
+                    }, 800);
+                }, 800);
+            }
+        });
+    });
+    </script>
 
     <!-- NO JAVASCRIPT WARNING -->
     <noscript>
