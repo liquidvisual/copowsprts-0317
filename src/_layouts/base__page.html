@@ -2,35 +2,41 @@
 layout: base
 ---
 
-{% assign hero = page.hero | default: "/assets/img/content/hero-1.png" %}
+{% assign hero = page.hero | default: "/assets/img/content/hero-0.png" %}
+
+{% capture breadcrumb_classes %}
+    {% unless page.breadcrumbs %} invisible {% endunless %}
+{% endcapture %}
 
 <!-- HERO -->
 <div class="lv-hero-wrapper">
-    <div class="lv-hero has-fixed-height">
+    <div class="lv-hero has-height-preset-2">
         <div class="lv-hero-item" style="background-image: url('{{ hero }}')">
-        	<div class="container">
-        	    <div class="lv-hero-item-caption animated fadeInLeft">
 
-                    <h1><img src="/assets/img/content/logo-kawasaki.png" alt="Kawasaki"></h1>
+            <!-- PAGE HEADER -->
+            <header class="page-header">
 
-                    <div class="row justify-content-end">
-                        <div class="col-md-4">
-                            <ul class="list-unstyled text-right">
-                                <li><a class="btn-tile" href="#"><h2>New Bikes <i class="fa fa-angle-right"></i></h2></a></li>
-                                <li><a class="btn-tile" href="#"><h2>Specials <i class="fa fa-angle-right"></i></h2></a></li>
-                                <li><a class="btn-tile" href="#"><h2>Promotions <i class="fa fa-angle-right"></i></h2></a></li>
-                                <li><a class="btn-tile" href="#"><h2>Used Bikes <i class="fa fa-angle-right"></i></h2></a></li>
-                            </ul>
-                        </div>
+                <!-- BREADCRUMBS -->
+                <nav class="breadcrumbs {{ breadcrumb_classes }}">
+                    <div class="container">
+                        {% include snippets/breadcrumb.html %}
                     </div>
+                </nav>
 
+                <div class="container">
+                    {% if page.title_override %}
+                        <h2 class="h1">{{ page.title_override }}</h2>
+                    {% else %}
+                        <h1>{{ page.title }}</h1>
+                    {% endif %}
+                </div>
+            </header>
 
-        	    </div>
-        	</div>
         </div>
     </div>
 </div>
 
-<div class="spacer mb-4"></div>
-
-{{ content }}
+<!-- CONTENT -->
+<div class="page-content py-4">
+    {{ content }}
+</div>

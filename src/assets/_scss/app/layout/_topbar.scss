@@ -63,7 +63,7 @@
     display: block; // [LOCKED]
     padding: rem-calc(0 15);
     line-height: rem-calc(35);
-    font-weight: bold;
+    font-weight: 600;
     color: white;
     cursor: pointer;
     transition: background-color 200ms ease;
@@ -140,7 +140,7 @@
 //-----------------------------------------------------------------
 
 .lv-topbar .dropdown {
-    display: none; // OPT IN DESIGN
+    // display: none; // OPT IN DESIGN
     position: absolute;
     top: auto;
     left: 0;
@@ -185,7 +185,8 @@
 .lv-topbar .dropdown li a {
     transition: none; // UX decision
     font-size: rem-calc(13); // opinionated
-    color: $body-color;
+    // color: $body-color;
+    color: #222;
     // padding: rem-calc(15 15);
 }
 //=========================================

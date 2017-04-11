@@ -23,13 +23,13 @@ address: 212 & 218 Main South Road, Morphett Vale, SA 5162
 # OFFICES
 offices:
   - title: Yamaha Showroom
-    address: 212 Main South Road, Morphett Vale, SA 5162
+    address: 212 Main South Road,<br> Morphett Vale, SA 5162
     phone: (08) 8382 5581
     email: hello@coastpowersports.com.au
     trading_hours: "Monday - Friday : 9.00am - 5.30pm<br> Thursday : 9.00am - 7.00pm<br> Saturday : 9.00am - 1.00pm"
 
   - title: KTM & Kawasaki Showroom
-    address: 218 Main South Road, Morphett Vale, SA 5162
+    address: 218 Main South Road,<br> Morphett Vale, SA 5162
     phone: (08) 8382 5581
     email: info@coastpowersports.com.au
 

@@ -60,10 +60,10 @@ $font-path: "/assets/fonts" !default;
     font-family: 'Proxima Nova';
     font-style: normal;
     font-weight: 800;
-    src: url("Fonts/9b05cd3b-19d8-496a-816b-8de46cf24af1.eot?#iefix") format("eot");
+    src: url('#{$font-path}/9b05cd3b-19d8-496a-816b-8de46cf24af1.eot?#iefix') format('eot');
     src: local('☺'),
-        url("Fonts/a086d1e1-d71a-4248-bc5b-6a91bbda0756.woff2") format("woff2"),
-        url("Fonts/43106d4c-07a9-48c0-bdeb-d82f359c85f5.woff") format("woff"),
-        url("Fonts/7783372a-b74a-4eb3-902f-ab18b106eb46.ttf") format("truetype"),
-        url("Fonts/22e79766-6290-47c1-b1af-93665675dd48.svg#22e79766-6290-47c1-b1af-93665675dd48") format("svg");
+        url('#{$font-path}/a086d1e1-d71a-4248-bc5b-6a91bbda0756.woff2') format('woff2'),
+        url('#{$font-path}/43106d4c-07a9-48c0-bdeb-d82f359c85f5.woff') format('woff'),
+        url('#{$font-path}/7783372a-b74a-4eb3-902f-ab18b106eb46.ttf') format('truetype'),
+        url('#{$font-path}/22e79766-6290-47c1-b1af-93665675dd48.svg#22e79766-6290-47c1-b1af-93665675dd48') format('svg');
 }

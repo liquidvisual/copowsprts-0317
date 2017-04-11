@@ -13,14 +13,20 @@
 
 .btn-tile {
     display: block;
-    height: rem-calc(86);
-    padding: rem-calc(10);
-    background: rgba(black, 0.77);
-    font-weight: 800;
+    padding: rem-calc(15);
+    margin-top: rem-calc(5); // resent
+    background: #6abd5a; //rgba(black, 0.77);
     color: white;
 
     h2 {
-        font-weight: 700;
+        font-size: rem-calc(28);
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &:hover > h2 {
+        color: white;
     }
 }
 

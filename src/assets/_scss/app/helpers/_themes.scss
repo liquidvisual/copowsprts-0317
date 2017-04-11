@@ -1,7 +1,7 @@
 /*
     THEMES.CSS
 
-    - Last updated: 10.03.17
+    - Last updated: 11.04.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -14,22 +14,24 @@
 .theme-home {
 
 	//=========================================
+	// PAGE + HERO
+	//=========================================
+
+	.lv-page {
+		padding-top: 0; // 142px;
+	}
+
+	.lv-hero-item {
+		padding-bottom: rem-calc(80);
+	}
+
+	//=========================================
 	// TOP
 	//=========================================
 
 	.headroom--top {
-
-		// Not used anymore, but may in future
-		.global-header-body::after {
-			@include media-breakpoint-up(md) {
-				display: none; // no nav BG for homepage
-			}
-		}
-
 		.global-header-body {
-			@include media-breakpoint-up(md) {
-			    background: none;
-			}
+			background: none;
 		}
 	}
 
@@ -44,7 +46,7 @@
 			}
 
 			@include media-breakpoint-up(xl) {
-			    margin-top: 40px;
+			    margin-top: 70px;
 			}
 
 		 	img {
@@ -57,27 +59,6 @@
 		 		}
 		 	}
 		}
-	}
-
-	// .lv-hero-item-caption {
-	// 	@include media-breakpoint-down(sm) {
-	// 	    padding-top: calc(#{rem-calc(110)} + #{$header-sm-height} + #{rem-calc(32)});
-	// 	}
-	// }
-
-	//=========================================
-	// REMOVE THIS - QUICKIE
-	//=========================================
-
-	.lv-hero-item-caption {
-	    // margin: rem-calc(80 0);
-	    // background: red;
-
-	    h1 {
-	        position: static;
-	        // font-size: rem-calc(23);
-	        // color: white;
-	    }
 	}
 }
 

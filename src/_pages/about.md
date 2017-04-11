@@ -1,8 +1,8 @@
 ---
-layout: base__page
+layout: child_layout/text_page
 title: About
 permalink: /about/
-hero: /assets/img/content/hero-2.jpg
+hero: /assets/img/content/hero-0.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

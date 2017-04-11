@@ -1,0 +1,90 @@
+---
+layout: base
+---
+
+{% assign hero = page.hero | default: "/assets/img/content/hero-0.png" %}
+{% assign side_nav = site.data.sitemap[page.side_nav_id].children %}
+
+{% capture hero_classes %}
+    {% if side_nav %} has-height-preset-1 {% else %} has-height-preset-2 {% endif %}
+{% endcapture %}
+
+{% capture breadcrumb_classes %}
+    {% unless page.breadcrumbs %} invisible {% endunless %}
+{% endcapture %}
+
+{% capture learner_approved %}
+    {% if page.learner_approved %}<img class="float-right" width="193" src="/assets/img/layout/lams-learner-approved@2x.png" alt="Lams Learner Approved">{% endif %}
+{% endcapture %}
+
+{% capture title_parent %}{% if page.url contains 'kawasaki' %}kawasaki{% else %}ktm{% endif %}{% endcapture %}
+
+<!-- HERO -->
+<div class="lv-hero-wrapper">
+    <div class="lv-hero {{ hero_classes }}">
+        <div class="lv-hero-item" style="background-image: url('{{ hero }}')">
+        	<div class="container">
+
+                <!-- CAPTION TOP -->
+        	    <div class="lv-hero-item-caption-top">
+                    {% if side_nav %}
+                        <h1><a href="{{ page.url }}"><img src="{{ page.logo }}" alt="{{ page.title }}"></a></h1>
+                    {% else %}
+                        <h2><a href="/{{title_parent}}/"><img src="{{ page.logo }}" alt="{{ title_parent }}"></a></h2>
+                    {% endif %}
+                </div>
+
+                {% if side_nav %}
+
+                    <!-- CAPTION BOTTOM -->
+                    <div class="lv-hero-item-caption-bottom mt-auto">
+                        <div class="row justify-content-end">
+                            <div class="col-md-4">
+                                <ul class="list-unstyled mb-0 text-right">
+                                    {% for item in side_nav %}
+                                        <li>
+                                            <a class="btn-tile h4" href="{{ item.url }}">
+                                                <b>{{ item.title }} &nbsp;<i class="fa fa-angle-right"></i></b>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+        	</div> <!-- /.container -->
+        </div> <!-- /.lv-hero-item -->
+
+        {% unless side_nav %}
+
+            <!-- PAGE HEADER -->
+            <header class="page-header">
+
+                <!-- BREADCRUMBS -->
+                <nav class="breadcrumbs {{ breadcrumb_classes }}">
+                    <div class="container">
+                        {% include snippets/breadcrumb.html %}
+                    </div>
+                </nav>
+
+                <div class="container">
+                    {% if page.title_override %}
+                        <h2 class="h1">{{ page.title_override }}</h2>
+                    {% else %}
+                        <h1>{{ page.title }} {{ learner_approved }}</h1>
+                    {% endif %}
+                </div>
+            </header>
+
+        {% endunless %}
+
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="page-content py-4">
+    {{ content }}
+</div>

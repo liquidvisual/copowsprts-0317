@@ -2,21 +2,49 @@
   url: /
 
 - title: Yamaha
-  url: /yamaha/
+  url: '#yamaha'
 
 - title: KTM
   url: /ktm/
+  include_children_in_nav: true
+  children:
+    - title: New Bikes
+      url: /ktm/new-bikes/
+      include_children_in_nav: true
+      children:
+        - title: MX
+          url: /ktm/new-bikes/mx/
+          include_children_in_nav: true
+          children:
+            - title: 450 SX-F Factory Edition
+              url: /ktm/new-bikes/mx/450-sx-f-factory-edition/
+
+    - title: Specials
+      url: /kawasaki/specials/
+
+    - title: Promotions
+      url: /kawasaki/promotions/
+
+    - title: Accessories
+      url: /kawasaki/accessories/
+
+    - title: Used Bikes
+      url: /kawasaki/used-bikes/
 
 - title: Kawasaki
   url: /kawasaki/
-  include_children_in_nav: false
+  include_children_in_nav: true
   children:
     - title: New Bikes
       url: /kawasaki/new-bikes/
-      include_children_in_nav: false
+      include_children_in_nav: true
       children:
-        - title: Bike Item
-          url: /kawasaki/new-bikes/bike-item/
+        - title: MX
+          url: /kawasaki/new-bikes/mx/
+          include_children_in_nav: true
+          children:
+            - title: 450 SX-F Factory Edition
+              url: /kawasaki/new-bikes/mx/450-sx-f-factory-edition/
 
     - title: Specials
       url: /kawasaki/specials/
@@ -32,10 +60,6 @@
 
 - title: Used Bikes
   url: /used-bikes/
-  include_children_in_nav: false
-  children:
-    - title: Kawasaki
-      url: /used-bikes/kawasaki/
 
 - title: Service
   url: /service/

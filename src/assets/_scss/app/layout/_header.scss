@@ -37,6 +37,8 @@ $header-lg-height: 280px !default;
 //**********************************************
 
 .headroom--not-top {
+	// position: fixed;
+
 	.global-header-body {
 		background: rgba(0,0,0,0.8);
 	}
@@ -133,6 +135,7 @@ $header-lg-height: 280px !default;
 		display: flex;
 		height: $header-sm-height;
 		transition: height 100ms ease;
+		align-items: center;
 
 		@include media-breakpoint-up(md) {
 		    height: $header-md-height;
@@ -149,8 +152,6 @@ $header-lg-height: 280px !default;
 //-----------------------------------------------------------------
 
 .global-header .logo {
-	margin: auto 0; // align vertical
-
 	img {
 		width: 170px;
 		// transition: all 300ms ease;

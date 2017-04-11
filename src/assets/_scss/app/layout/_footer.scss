@@ -1,7 +1,7 @@
 /*
     FOOTER.CSS
 
-    - Last updated: 00.00.00
+    - Last updated: 11.04.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -12,7 +12,8 @@
 //-----------------------------------------------------------------
 
 .global-footer {
-	background: #000001;
+	border-top: 2px solid #303030;
+	background: black;
 
 	color: white;
 
@@ -26,10 +27,31 @@
 //-----------------------------------------------------------------
 
 .global-footer-top {
+	padding: rem-calc(50 0 20 0);
+
+	//=========================================
+	// PANEL
+	//=========================================
 
 	.global-footer-panel {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
 		background: #131415;
-		padding: rem-calc(20);
+		padding: rem-calc(20 30);
+
+		h4 {
+			text-transform: uppercase;
+			font-weight: 600;
+
+			i {
+				font-size: rem-calc(25);
+			}
+		}
+
+		a {
+			color: #7c7d7d;
+		}
 	}
 }
 
@@ -39,6 +61,16 @@
 
 .global-footer-bottom {
 	text-transform: uppercase;
+	font-size: 14px;
+
+	a {
+		opacity: 0.4;
+		transition: opacity 300ms ease;
+	}
+
+	a:hover {
+		opacity: 0.6;
+	}
 }
 
 //=========================================

@@ -29,6 +29,65 @@
         padding: 7px;
     }
 }
+
+//-----------------------------------------------------------------
+// FLEX MASONRY
+//-----------------------------------------------------------------
+
+.masonry {
+    column-gap: 10px;
+
+    @include media-breakpoint-up(md) {
+        column-count: 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+        column-count: 3;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+// .masonry {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     height: 100vw;
+//     max-height: 800px;
+//     font-size: 0;
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+
+//     width: 400px;
+
+//     img {
+//         width: 33.3333333%;
+//         transition: .8s opacity;
+//     }
+
+//     &:hover img { opacity: 0.3; }
+//     &:hover img:hover { opacity: 1; }
+// }
+
+
+
+/* fallback for earlier versions of Firefox */
+// @supports not (flex-wrap: wrap) {
+// div#masonry { display: block; }
+// div#masonry img {
+// display: inline-block;
+// vertical-align: top;
+// }
+// }
+
+
+
+
+
 //=========================================
 //
 //=========================================

@@ -1,0 +1,32 @@
+/*
+    BREADCRUMB.CSS
+
+    - Last updated: 11.04.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// BREADCRUMB
+//-----------------------------------------------------------------
+
+.breadcrumb {
+    margin: 0 0 $spacer/3 0;
+}
+
+.breadcrumb,
+.breadcrumb a,
+.breadcrumb-item + .breadcrumb-item::before {
+    font-size: rem-calc(14);
+    color: darken(white, 30%);
+    text-transform: uppercase;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
+//=========================================
+//
+//=========================================

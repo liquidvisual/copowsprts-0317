@@ -1,7 +1,7 @@
 /*
     TYPE.CSS
 
-    - Last updated: 16.10.16
+    - Last updated: 10.04.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -12,10 +12,22 @@
 //--------------------------------------------------------------------
 
 html {
-  @include media-breakpoint-up(xs) { font-size: $font-size-xs; }
-  @include media-breakpoint-up(md) { font-size: rem-calc(13); }
-  @include media-breakpoint-up(lg) { font-size: rem-calc(14); }
-  @include media-breakpoint-up(xl) { font-size: $font-size-lg; }
+    @include media-breakpoint-up(xs) { font-size: rem-calc(14); }
+    @include media-breakpoint-up(md) { font-size: rem-calc(14); }
+    @include media-breakpoint-up(lg) { font-size: rem-calc(14); }
+    @include media-breakpoint-up(xl) { font-size: rem-calc(16); }
+}
+
+//-----------------------------------------------------------------
+// HEADERS
+//-----------------------------------------------------------------
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h4, h5, h6 {
+    font-weight: 800;
 }
 
 //-----------------------------------------------------------------
@@ -23,7 +35,17 @@ html {
 //-----------------------------------------------------------------
 
 a {
-	transition: color ease 300ms, background-color ease 300ms;
+    transition: color ease 300ms, background-color ease 300ms;
+}
+
+//-----------------------------------------------------------------
+// PARAGRAPHS
+//-----------------------------------------------------------------
+
+p, ul, ol, td {
+    @include media-breakpoint-up(lg) {
+        font-size: rem-calc(17); //$font-size-lg; //15
+    }
 }
 
 //-----------------------------------------------------------------
@@ -31,8 +53,8 @@ a {
 //-----------------------------------------------------------------
 
 .spacer {
-	width: 1px;
-	height: 1px;
+    width: 1px;
+    height: 1px;
 }
 
 //-----------------------------------------------------------------
