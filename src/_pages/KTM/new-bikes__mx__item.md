@@ -5,6 +5,7 @@ permalink: /ktm/new-bikes/mx/450-sx-f-factory-edition/
 hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-ktm.png
 learner_approved: true
+breadcrumbs: true
 theme: theme-ktm
 ---
 

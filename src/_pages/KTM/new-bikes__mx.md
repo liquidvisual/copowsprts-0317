@@ -4,6 +4,7 @@ title: MX
 permalink: /ktm/new-bikes/mx/
 hero: /assets/img/content/hero-5.jpg
 logo: /assets/img/content/logo-ktm.png
+breadcrumbs: true
 theme: theme-ktm
 ---
 

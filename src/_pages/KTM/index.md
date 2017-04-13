@@ -2,7 +2,7 @@
 layout: child_layout/brand
 title: KTM
 permalink: /ktm/
-hero: /assets/img/content/hero-5.jpg
+hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-ktm.png
 side_nav_id: 2
 theme: theme-ktm

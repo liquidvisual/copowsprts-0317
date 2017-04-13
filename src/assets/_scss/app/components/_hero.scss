@@ -10,17 +10,17 @@
 // VARIABLES
 //-----------------------------------------------------------------
 
-$hero-sm-height:            auto          !default; // IMPORTANT: if carousel slides, you need a fixed height
-$hero-md-height:            auto          !default;
-$hero-lg-height:            rem-calc(834) !default;
+$hero-sm-height:            rem-calc(163); // IMPORTANT: if carousel slides, you need a fixed height
+$hero-md-height:            rem-calc(163);
+$hero-lg-height:            rem-calc(834);
 
-$hero-sm-height-preset-1:      rem-calc(689) !default; // Appears on product landing
-$hero-md-height-preset-1:      rem-calc(689) !default;
-$hero-lg-height-preset-1:      rem-calc(689) !default;
+$hero-sm-height-preset-1:   auto; // Appears on product landing
+$hero-md-height-preset-1:   rem-calc(689);
+$hero-lg-height-preset-1:   rem-calc(689);
 
-$hero-sm-height-preset-2:      rem-calc(526) !default; // Appears on internal pages
-$hero-md-height-preset-2:      rem-calc(526) !default;
-$hero-lg-height-preset-2:      rem-calc(526) !default;
+$hero-sm-height-preset-2:   rem-calc(526); // Appears on internal pages
+$hero-md-height-preset-2:   rem-calc(526);
+$hero-lg-height-preset-2:   rem-calc(526);
 
 //-----------------------------------------------------------------
 // HERO WRAPPER
@@ -39,7 +39,6 @@ $hero-lg-height-preset-2:      rem-calc(526) !default;
 //-----------------------------------------------------------------
 
 .lv-hero {
-    // width: 100%; // added last minute - breaking?
     height: $hero-sm-height;
     overflow: hidden; // causes problems without JS
 
@@ -48,18 +47,7 @@ $hero-lg-height-preset-2:      rem-calc(526) !default;
     }
 
     @include media-breakpoint-up(lg) {
-       height: $hero-lg-height;
-    }
-
-    //=========================================
-    // Has Auto Height
-    //
-    // * Will override above at all sizes
-    // * Height determined by inner caption
-    //=========================================
-
-    &.has-auto-height {
-        height: auto;
+        height: $hero-lg-height;
     }
 
     //=========================================
@@ -67,13 +55,13 @@ $hero-lg-height-preset-2:      rem-calc(526) !default;
     //=========================================
 
     &.has-height-preset-1 {
-        // height: rem-calc(150); //$hero-sm-height;
+        height: $hero-sm-height-preset-1;
 
         @include media-breakpoint-up(md) { // added - refactor
-           height: rem-calc(768);
+           height: $hero-md-height-preset-1;
         }
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(lg) {
            height: $hero-lg-height-preset-1;
         }
     }
@@ -83,13 +71,13 @@ $hero-lg-height-preset-2:      rem-calc(526) !default;
     //=========================================
 
     &.has-height-preset-2 {
-        // height: rem-calc(150); //$hero-sm-height;
+        height: $hero-sm-height-preset-2;
 
         @include media-breakpoint-up(md) { // added - refactor
-           height: rem-calc(768);
+           height: $hero-md-height-preset-2;
         }
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(lg) {
            height: $hero-lg-height-preset-2;
         }
     }
@@ -102,13 +90,16 @@ $hero-lg-height-preset-2:      rem-calc(526) !default;
 .lv-hero-item {
     display: flex;
     height: 100%;
+    padding: $spacer 0;
     background-repeat: no-repeat;
-    // background-position: center center;
     background-position: top center;
     background-size: cover;
-    // padding: $header-sm-height + 20 0;
 
-    padding: $spacer*2 0;
+
+
+    @include media-breakpoint-up(md) {
+        padding: $spacer*2 0;
+    }
 
     > .container {
         display: flex;
@@ -135,37 +126,16 @@ $hero-lg-height-preset-2:      rem-calc(526) !default;
 
 .lv-hero-item-caption-top {
     @include media-breakpoint-down(sm) {
-        margin-bottom: rem-calc(120);
+        margin-bottom: rem-calc(120); // [locked]
     }
-
-    h1 img {
-        // width: rem-calc(210);
-
-        @include media-breakpoint-up(md) {
-            // width: rem-calc(340);
-        }
-    }
-}
-
-//-----------------------------------------------------------------
-// PAGE HEADER
-//-----------------------------------------------------------------
-
-.page-header {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: $spacer*1.5 0 $spacer 0;
-    background: rgba(black, 0.63);
-    color: white;
 
     h1, h2 {
-        font-size: rem-calc(62);
-        font-weight: 800;
+        line-height: 0; // reset
+    }
 
-        img {
-            position: relative;
-            top: 10px;
+    img {
+        @include media-breakpoint-down(sm) {
+            width: 188px;
         }
     }
 }

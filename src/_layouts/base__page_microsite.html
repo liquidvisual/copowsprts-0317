@@ -19,10 +19,20 @@ layout: base
 
 {% capture title_parent %}{% if page.url contains 'kawasaki' %}kawasaki{% else %}ktm{% endif %}{% endcapture %}
 
+{% if page.hero_mobile %}
+    <style>
+        @media only screen and (max-width: 544px) {
+            .lv-hero-item {
+                 background-image: url({{ page.hero_mobile }}) !important;
+            }
+        }
+    </style>
+{% endif %}
+
 <!-- HERO -->
 <div class="lv-hero-wrapper">
     <div class="lv-hero {{ hero_classes }}">
-        <div class="lv-hero-item" style="background-image: url('{{ hero }}')">
+        <div class="lv-hero-item" data-src="http://placehold.it/300/300" style="background-image: url('{{ hero }}')">
         	<div class="container">
 
                 <!-- CAPTION TOP -->
@@ -39,12 +49,12 @@ layout: base
                     <!-- CAPTION BOTTOM -->
                     <div class="lv-hero-item-caption-bottom mt-auto">
                         <div class="row justify-content-end">
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-lg-5 col-xl-4">
                                 <ul class="list-unstyled mb-0 text-right">
                                     {% for item in side_nav %}
                                         <li>
-                                            <a class="btn-tile h4" href="{{ item.url }}">
-                                                <b>{{ item.title }} &nbsp;<i class="fa fa-angle-right"></i></b>
+                                            <a class="btn-tile h2" href="{{ item.url }}">
+                                                {{ item.title }} &nbsp;<i class="fa fa-angle-right"></i>
                                             </a>
                                         </li>
                                     {% endfor %}

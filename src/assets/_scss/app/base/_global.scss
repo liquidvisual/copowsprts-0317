@@ -23,6 +23,10 @@ html, body {
 	padding-top: $header-sm-height;
 
 	@include media-breakpoint-up(md) {
+	    padding-top: rem-calc(176); // magic
+	}
+
+	@include media-breakpoint-up(lg) {
 	    padding-top: rem-calc(152); // magic
 	}
 
@@ -53,3 +57,7 @@ html, body {
 //=========================================
 //
 //=========================================
+
+.global-header {
+	// opacity: 0.4;
+}

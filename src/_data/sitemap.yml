@@ -2,7 +2,7 @@
   url: /
 
 - title: Yamaha
-  url: '#yamaha'
+  url: '/#yamaha'
 
 - title: KTM
   url: /ktm/
@@ -20,16 +20,16 @@
               url: /ktm/new-bikes/mx/450-sx-f-factory-edition/
 
     - title: Specials
-      url: /kawasaki/specials/
+      url: /kawasaki/new-bikes/
 
     - title: Promotions
-      url: /kawasaki/promotions/
+      url: /kawasaki/new-bikes/
 
     - title: Accessories
-      url: /kawasaki/accessories/
+      url: /kawasaki/new-bikes/
 
     - title: Used Bikes
-      url: /kawasaki/used-bikes/
+      url: /kawasaki/new-bikes/
 
 - title: Kawasaki
   url: /kawasaki/
@@ -47,16 +47,16 @@
               url: /kawasaki/new-bikes/mx/450-sx-f-factory-edition/
 
     - title: Specials
-      url: /kawasaki/specials/
+      url: /kawasaki/new-bikes/
 
     - title: Promotions
-      url: /kawasaki/promotions/
+      url: /kawasaki/new-bikes/
 
     - title: Accessories
-      url: /kawasaki/accessories/
+      url: /kawasaki/new-bikes/
 
     - title: Used Bikes
-      url: /kawasaki/used-bikes/
+      url: /kawasaki/new-bikes/
 
 - title: Used Bikes
   url: /used-bikes/
