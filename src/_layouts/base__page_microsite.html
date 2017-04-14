@@ -9,10 +9,6 @@ layout: base
     {% if side_nav %} has-height-preset-1 {% else %} has-height-preset-2 {% endif %}
 {% endcapture %}
 
-{% capture breadcrumb_classes %}
-    {% unless page.breadcrumbs %} invisible {% endunless %}
-{% endcapture %}
-
 {% capture learner_approved %}
     {% if page.learner_approved %}<img class="float-right" width="193" src="/assets/img/layout/lams-learner-approved@2x.png" alt="Lams Learner Approved">{% endif %}
 {% endcapture %}
@@ -73,12 +69,16 @@ layout: base
             <!-- PAGE HEADER -->
             <header class="page-header">
 
-                <!-- BREADCRUMBS -->
-                <nav class="breadcrumbs {{ breadcrumb_classes }}">
-                    <div class="container">
-                        {% include snippets/breadcrumb.html %}
-                    </div>
-                </nav>
+                {% if page.breadcrumbs %}
+
+                    <!-- BREADCRUMBS -->
+                    <nav class="breadcrumbs">
+                        <div class="container">
+                            {% include snippets/breadcrumb.html %}
+                        </div>
+                    </nav>
+
+                {% endif %}
 
                 <div class="container">
                     {% if page.title_override %}

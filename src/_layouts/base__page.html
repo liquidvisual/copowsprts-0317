@@ -16,12 +16,16 @@ layout: base
             <!-- PAGE HEADER -->
             <header class="page-header">
 
-                <!-- BREADCRUMBS -->
-                <nav class="breadcrumbs {{ breadcrumb_classes }}">
-                    <div class="container">
-                        {% include snippets/breadcrumb.html %}
-                    </div>
-                </nav>
+                {% if page.breadcrumbs %}
+
+                    <!-- BREADCRUMBS -->
+                    <nav class="breadcrumbs {{ breadcrumb_classes }}">
+                        <div class="container">
+                            {% include snippets/breadcrumb.html %}
+                        </div>
+                    </nav>
+
+                {% endif %}
 
                 <div class="container">
                     {% if page.title_override %}
