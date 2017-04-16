@@ -23,7 +23,7 @@ html, body {
 	padding-top: $header-sm-height;
 
 	@include media-breakpoint-up(md) {
-	    padding-top: rem-calc(176); // magic
+	    padding-top: rem-calc(135); // magic
 	}
 
 	@include media-breakpoint-up(lg) {

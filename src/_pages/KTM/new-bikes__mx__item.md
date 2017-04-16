@@ -6,6 +6,7 @@ hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-ktm.png
 learner_approved: true
 breadcrumbs: true
+brand: ktm
 theme: theme-ktm
 ---
 

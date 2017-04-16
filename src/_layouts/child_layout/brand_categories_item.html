@@ -1,0 +1,55 @@
+---
+layout: base__page_microsite
+---
+
+{% assign brand = page.brand %}
+{% assign product_items = site.data.product_items %}
+
+<div class="container">
+
+	<!-- CONTENT -->
+	<div class="row">
+		<div class="col-md-7">
+			{{ content }}
+		</div>
+	</div>
+
+	<!-- CATEGORY ITEMS -->
+	<ul class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3 block-grid-xl-4">
+		{% for item in product_items %}
+			<li>
+				<a class="btn-card" href="{{ page.url }}/mx/">
+
+					<!-- IMAGE -->
+					<figure class="img">
+						<img width="100%" src="{{ item.image }}" alt="{{ item.title }}">
+						<span class="btn-card-bg" style="background-image: url({{ item.image }})"></span>
+					</figure>
+
+					<!-- HEADER -->
+					<h3 class="mb-0 h5 text-right text-extra-bold">{{ item.title }} &nbsp;<i class="fa fa-angle-right"></i></h3>
+
+					<!-- PRICE -->
+					<h4 class="subheader h6 text-bold text-right">
+						<span class="has-old-price">{{ item.price_was }}</span>&nbsp;&nbsp;
+						<span class="price">NOW {{ item.price }}</span>
+					</h4>
+
+					<!-- LEARNER ICON -->
+					{% if item.learner_approved %}
+						<img class="is-learner-approved" width="50" src="/assets/img/layout/icon-learner.png" alt="Learner Approved">
+					{% endif %}
+
+					<!-- ADDITIONAL TEXT -->
+					<span class="additional">
+						<span class="text-1 text-bold">{{ item.additional }}</span>
+						{% if item.demo_available %}
+						<span class="text-2 text-bold">Demo available</span>
+						{% endif %}
+					</span>
+
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

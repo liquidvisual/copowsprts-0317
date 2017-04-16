@@ -6,6 +6,7 @@ hero: /assets/img/content/hero-3-full.jpg
 hero_mobile: http://placehold.it/30x30/88a8b5
 logo: /assets/img/content/logo-kawasaki.png
 side_nav_id: 3
+brand: kawasaki
 theme: theme-kawasaki
 ---
 

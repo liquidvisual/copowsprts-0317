@@ -78,12 +78,34 @@ $brand-primary-ktm: #ff6600;
 // THEME KAWASAKI
 //-----------------------------------------------------------------
 
-.theme-kawasaki .btn-tile {
-	background: rgba($brand-primary-kawasaki, 0.77);
+.theme-kawasaki {
+	.btn-tile {
+		background: rgba($brand-primary-kawasaki, 0.77);
+	}
+
+	.btn-card {
+		h1, h2, h3, h4, h5, h6 {
+			background: $brand-primary-kawasaki;
+		}
+		.subheader {
+			background: darken($brand-primary-kawasaki, 5%);
+		}
+	}
 }
 
-.theme-ktm .btn-tile {
-	background: rgba($brand-primary-ktm, 0.77);
+.theme-ktm {
+	.btn-tile {
+		background: rgba($brand-primary-ktm, 0.77);
+	}
+
+	.btn-card {
+		h1, h2, h3, h4, h5, h6 {
+			background: $brand-primary-ktm;
+		}
+		.subheader {
+			background: darken($brand-primary-ktm, 6%);
+		}
+	}
 }
 
 //=========================================

@@ -19,7 +19,7 @@ $hero-sm-height-preset-1:   auto; // Appears on product landing
 $hero-md-height-preset-1:   rem-calc(689);
 $hero-lg-height-preset-1:   rem-calc(689);
 
-$hero-sm-height-preset-2:   rem-calc(250); // Appears on internal pages
+$hero-sm-height-preset-2:   rem-calc(290); // Appears on internal pages
 $hero-md-height-preset-2:   rem-calc(526);
 $hero-lg-height-preset-2:   rem-calc(526);
 
@@ -112,6 +112,10 @@ $hero-lg-height-preset-2:   rem-calc(526);
             width: 100%; // fixes glitch thing
         }
     }
+}
+
+.lv-hero-item-caption {
+    overflow: hidden; // savior IE11 bug
 }
 
 //-----------------------------------------------------------------

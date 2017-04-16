@@ -34,57 +34,47 @@
 // FLEX MASONRY
 //-----------------------------------------------------------------
 
-.masonry {
-    column-gap: 10px;
+.list-masonry {
+    margin: -3px;
 
-    @include media-breakpoint-up(md) {
-        column-count: 2;
+    li {
+        padding: 3px;
+        transition: opacity 200ms ease;
+
+        &:hover {
+            @include media-breakpoint-up(xl) {
+                opacity: 1 !important;
+            }
+        }
     }
 
-    @include media-breakpoint-up(lg) {
-        column-count: 3;
-    }
-
-    img {
-        width: 100%;
-        margin-bottom: 10px;
+    &:hover li {
+        @include media-breakpoint-up(xl) {
+            opacity: 0.6;
+        }
     }
 }
 
-// .masonry {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     height: 100vw;
-//     max-height: 800px;
-//     font-size: 0;
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
+//=========================================
+// PURE CSS WAY
+//=========================================
 
-//     width: 400px;
+// .list-masonry {
+//     column-gap: 10px;
 
-//     img {
-//         width: 33.3333333%;
-//         transition: .8s opacity;
+//     @include media-breakpoint-up(md) {
+//         column-count: 2;
 //     }
 
-//     &:hover img { opacity: 0.3; }
-//     &:hover img:hover { opacity: 1; }
+//     @include media-breakpoint-up(lg) {
+//         column-count: 3;
+//     }
+
+//     img {
+//         width: 100%;
+//         margin-bottom: 10px;
+//     }
 // }
-
-
-
-/* fallback for earlier versions of Firefox */
-// @supports not (flex-wrap: wrap) {
-// div#masonry { display: block; }
-// div#masonry img {
-// display: inline-block;
-// vertical-align: top;
-// }
-// }
-
-
 
 
 

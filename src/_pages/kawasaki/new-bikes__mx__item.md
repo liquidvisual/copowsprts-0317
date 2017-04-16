@@ -6,6 +6,7 @@ hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-kawasaki.png
 breadcrumbs: true
 learner_approved: true
+brand: kawasaki
 theme: theme-kawasaki
 ---
 

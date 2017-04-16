@@ -5,6 +5,7 @@ permalink: /ktm/
 hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-ktm.png
 side_nav_id: 2
+brand: ktm
 theme: theme-ktm
 ---
 

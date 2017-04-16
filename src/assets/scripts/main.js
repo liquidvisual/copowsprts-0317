@@ -14,6 +14,7 @@ $(function() {
     $(window).on('load', function() {
         $('html').addClass('has-loaded');
         $('input, textarea').placeholder(); // IE9 Patch
+        $('[data-masonry]').masonry();
     });
 
     //-----------------------------------------------------------------

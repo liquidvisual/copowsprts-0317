@@ -17,6 +17,14 @@
 
 .section-dark {
     background: #1d1c1c;
+
+    .divider {
+    	border-color: #3a3939;
+    }
+}
+
+.section-light {
+	background: white;
 }
 
 .section-inverse {
@@ -24,12 +32,6 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: white;
-	}
-
-	.divider {
-		width: 100%;
-		height: 1px;
-		border-bottom: 2px solid red;
 	}
 }
 
