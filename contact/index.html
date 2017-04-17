@@ -86,9 +86,9 @@
                                 </a>
                             </li>
                             <li class="">
-                                <span class="top-parent-anchor">
+                                <a class="top-parent-anchor" href="http://yamaha.com">
                                     <span class="text">Yamaha</span>
-                                </span>
+                                </a>
                             </li>
                             <li class="has-dropdown">
                                 <a class="top-parent-anchor" href="/ktm/">
@@ -232,10 +232,12 @@
         <div class="page-content py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xl-4">
 
                         <!-- CONTACT BOX -->
                         <div class="side-box mb-4">
+
+                            <!-- HEADER -->
                             <header class="side-box-header">
                                 <div class="row">
                                     <div class="col-10">
@@ -246,6 +248,8 @@
                                     </div>
                                 </div>
                             </header>
+
+                            <!-- BODY -->
                             <div class="side-box-body">
                                 <a href="tel:(08) 8382 5581">
                                     <i class="fa fa-phone"></i>&nbsp;
@@ -256,17 +260,17 @@
                                     <i class="fa fa-envelope"></i>&nbsp;
                                     <span>hello@coastpowersports.com.au</span>
                                 </a>
-                                <div class="spacer mb-3"></div>
-                                <h3 class="h5 text-extra-bold">Send us an email...
+                                <div class="spacer mb-4"></div>
+                                <h3 class="mb-4 h5 text-extra-bold">Send us an email...
 
                                     <!-- IF SUCCESS -->
-                                    <div class="alert alert-success" hidden>
+                                    <div class="alert alert-success" role="alert" hidden>
                                         <h4>Success!</h4>
                                         <p>Your form has been submitted.</p>
                                     </div>
 
                                     <!-- IF FAILURE -->
-                                    <div class="alert alert-danger alert-dismissible fade in" role="alert" hidden>
+                                    <div class="alert alert-danger alert-dismissible" role="alert" hidden>
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -304,20 +308,109 @@
                                             <div class="form-group">
 
                                                 <!-- <label for="message">Your Message (required)</label> -->
-                                                <textarea class="form-control" id="message" name="Message" rows="2" placeholder="Message" required></textarea>
+                                                <textarea class="form-control" id="message" name="Message" rows="4" placeholder="Message" required></textarea>
                                                 <small class="error">A message is required.</small>
                                             </div>
 
                                             <!-- SUBMIT -->
-                                            <button type="submit" class="btn btn-primary">Send</button>
+                                            <button type="submit" class="btn btn-primary float-right text-uppercase">Send
+                                                <i class="fa fa-angle-right"></i>
+                                            </button>
                                         </fieldset>
                                     </form>
+                                    <div class="spacer mb-3"></div>
                                 </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+                    <div class="col-xl-8">
+
+                        <!-- TRADING HOURS -->
+                        <div class="side-box is-trading-hours">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2 class="h4 text-extra-bold">Trading Hours &nbsp;&nbsp;&nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                    </h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <ul class="block-grid-md-3">
+                                        <li>
+                                            <h3 class="h5 mb-0 text-bold">Monday - Friday</h3>9.00am - 5.30pm</li>
+                                        <li>
+                                            <h3 class="h5 mb-0 text-bold">Thursday</h3>9.00am - 7.00pm</li>
+                                        <li>
+                                            <h3 class="h5 mb-0 text-bold">Saturday</h3>9.00am - 1.00pm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer mb-4"></div>
+
+                        <!-- LOCATIONS -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="side-box mb-4">
+
+                                    <!-- HEADER -->
+                                    <header class="side-box-header">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <h2 class="h4 text-extra-bold">Yamaha Showroom</h2>
+                                            </div>
+                                            <div class="col-2">
+                                                <i class="fa fa-map-marker"></i>
+                                            </div>
+                                        </div>
+                                    </header>
+
+                                    <!-- BODY -->
+                                    <div class="side-box-body">
+                                        <a href="#google-map-url-here">
+                                            <i class="fa fa-home"></i>&nbsp;
+                                            <span>212 Main South Road,
+                                                <br>Morphett Vale, SA 5162</span>
+                                        </a>
+                                    </div>
+
+                                    <!-- GOOGLE MAP -->
+                                    <div class="lv-google-map">
+                                        <iframe width="100%" height="320" frameborder="0" style="pointer-events: none" src="https://maps.google.com/maps?hl=en&q=212 Main South Road, Morphett Vale, SA 5162&z=21&ie=UTF8&t=roadmap&z=16&iwloc=A&output=embed"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="side-box mb-4">
+
+                                    <!-- HEADER -->
+                                    <header class="side-box-header">
+                                        <div class="row">
+                                            <div class="col-10">
+                                                <h2 class="h4 text-extra-bold">KTM & Kawasaki Showroom</h2>
+                                            </div>
+                                            <div class="col-2">
+                                                <i class="fa fa-map-marker"></i>
+                                            </div>
+                                        </div>
+                                    </header>
+
+                                    <!-- BODY -->
+                                    <div class="side-box-body">
+                                        <a href="#google-map-url-here">
+                                            <i class="fa fa-home"></i>&nbsp;
+                                            <span>218 Main South Road,
+                                                <br>Morphett Vale, SA 5162</span>
+                                        </a>
+                                    </div>
+
+                                    <!-- GOOGLE MAP -->
+                                    <div class="lv-google-map">
+                                        <iframe width="100%" height="320" frameborder="0" style="pointer-events: none" src="https://maps.google.com/maps?hl=en&q=218 Main South Road, Morphett Vale, SA 5162&z=21&ie=UTF8&t=roadmap&z=16&iwloc=A&output=embed"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -426,9 +519,9 @@
                 </a>
             </li>
             <li class="">
-                <span class="top-parent-anchor">
+                <a class="top-parent-anchor" href="http://yamaha.com">
                     <span class="text">Yamaha</span>
-                </span>
+                </a>
             </li>
             <li class="has-dropdown">
                 <a class="top-parent-anchor" href="/ktm/">
