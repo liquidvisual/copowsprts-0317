@@ -6,21 +6,37 @@ layout: base__page
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-7">
+		<div class="col-lg-7">
 			{{ content }}
 		</div>
-		<div class="col-md-4 offset-md-1">
-			<h3>Contact us to book your service or repair</h3>
+		<div class="col-lg-5 col-xl-4 offset-xl-1">
 
-			<a href="tel:{{ settings.offices[0].phone }}">
-			    <i class="fa fa-phone"></i>&nbsp;
-			    <span class="text hidden-sm-down">{{ settings.offices[0].phone }}</span>
-			</a>
-			<br>
-			<a class="hidden-sm-down" href="mailto:{{ settings.offices[0].email }}">
-			    <i class="fa fa-envelope"></i>&nbsp;  {{ settings.offices[0].email }}
-			</a>
+			<!-- CONTACT BOX -->
+			<div class="side-box mb-4">
+				<header class="side-box-header">
+					<div class="row">
+						<div class="col-10">
+							<h3>Contact us to book your service or repair</h3>
+						</div>
+						<div class="col-2">
+							<i class="fa fa-wrench"></i>
+						</div>
+					</div>
+				</header>
+				<div class="side-box-body">
+					<a href="tel:{{ settings.offices[0].phone }}">
+					    <i class="fa fa-phone"></i>&nbsp;
+					    <span>{{ settings.offices[0].phone }}</span>
+					</a>
+					<br>
+					<a href="mailto:{{ settings.offices[0].email }}">
+					    <i class="fa fa-envelope"></i>&nbsp;
+					    <span>{{ settings.offices[0].email }}</span>
+					</a>
+				</div>
+			</div>
 
+			<!-- OPTIONAL IMAGE -->
 			<img width="100%" src="/assets/img/content/service-pic.jpg" alt="Bike">
 		</div>
 	</div>

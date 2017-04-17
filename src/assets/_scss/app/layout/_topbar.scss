@@ -140,7 +140,7 @@
 //-----------------------------------------------------------------
 
 .lv-topbar .dropdown {
-    // display: none; // OPT IN DESIGN
+    display: none; // OPT IN DESIGN
     position: absolute;
     top: auto;
     left: 0;
@@ -160,7 +160,8 @@
     left: auto;
 }
 
-.lv-topbar .dropdown.is-nav-included {
+.lv-topbar .dropdown.is-nav-included,
+.lv-topbar .dropdown.is-nav-included .dropdown {
     display: block;
 }
 

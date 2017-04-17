@@ -2,7 +2,7 @@
   url: /
 
 - title: Yamaha
-  url: '/#yamaha'
+  url: http://yamaha.com
 
 - title: KTM
   url: /ktm/
@@ -72,3 +72,6 @@
 
 - title: Contact
   url: /contact/
+  include_children_in_nav: false
+  children:
+    - title:

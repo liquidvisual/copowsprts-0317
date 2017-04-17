@@ -64,6 +64,12 @@
                         <li class="{% if item.children %} has-dropdown {% endif %}">
                             <a href="{{ item.url }}"><span class="text">{{ item.title }}</span></a>
 
+                            {% if item.title == Contact %}
+                                <div class="contact">
+                                    {% include off_canvas_contact.html %}
+                                </div>
+                            {% endif %}
+
                             {% comment %}
                             <!-----------------------------------------------------------------
                             THIRD LEVEL

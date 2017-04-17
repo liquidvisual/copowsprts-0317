@@ -1,0 +1,31 @@
+{% assign settings = site.data.settings %}
+
+<!-- CONTACTS -->
+<div class="links mb-3">
+	<a href="tel:{{ settings.offices[0].phone }}"><i class="fa fa-phone"></i>&nbsp; {{ settings.offices[0].phone }}</a>
+	<a href="mailto:{{ settings.offices[0].email }}"><i class="fa fa-envelope"></i>&nbsp; {{ settings.offices[0].email }}</a>
+</div>
+
+<!-- SOCIAL MEDIA -->
+<div class="social-media mb-4">
+	<a class="facebook" href="{{ settings.facebook }}"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;
+	<a class="instagram" href="{{ settings.instagram }}"><i class="fa fa-instagram"></i></a>
+</div>
+
+<!-- OUR LOCATIONS -->
+<div class="links mb-2">
+	<h4 class="mb-3 h5 text-uppercase"><i class="fa fa-map-marker"></i>&nbsp; Our Locations</h4>
+
+	{% for item in settings.offices %}
+		<h5 class="mb-1">{{ item.title }}</h5>
+		<address class="mb-0">{{ item.address }}</address>
+		<a class="btn-link" href="/contact/#{{ item.title | slugify }}">View map <i class="fa fa-angle-right"></i></a>
+		<br>
+	{% endfor %}
+</div>
+
+<!-- TRADING HOURS -->
+<div class="global-footer-panel text-xl-right">
+	<h4 class="mb-3 h5 text-uppercase"><i class="fa fa-clock-o"></i>&nbsp; Trading Hours</h4>
+	<p>{{ settings.offices[0].trading_hours }}</p>
+</div>

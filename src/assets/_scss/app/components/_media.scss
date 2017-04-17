@@ -53,6 +53,9 @@
 		position: relative;
 		padding: rem-calc(15 15 0 0);
 		line-height: 1.4;
+		overflow: hidden;
+
+		max-height: 99px; // test?
 
 		.has-old-price {
 			color: #f9424d;

@@ -48,7 +48,7 @@
 // $gray-lighter:              #eceeef !default;
 // $gray-lightest:             #f7f7f9 !default;
 
-// $brand-primary:             #0275d8 !default;
+$brand-primary:             #e5251f; //#0275d8 !default;
 // $brand-secondary:           #0275d8 !default;
 // $brand-tertiary:            #0275d8 !default;
 // $brand-quaternary:          #0275d8 !default;
@@ -328,7 +328,7 @@ $font-size-h6: rem-calc(17); //1rem !default;
 // $btn-toolbar-margin:             .5rem !default;
 
 // // Allows for customizing button radius independently from global border radius
-// $btn-border-radius:              $border-radius !default;
+$btn-border-radius:              0; //$border-radius !default;
 // $btn-border-radius-lg:           $border-radius-lg !default;
 // $btn-border-radius-sm:           $border-radius-sm !default;
 
@@ -337,9 +337,9 @@ $font-size-h6: rem-calc(17); //1rem !default;
 
 // $input-padding-x:                .75rem !default;
 // $input-padding-y:                .5rem !default;
-// $input-line-height:              1.25 !default;
+$input-line-height:              1.5; //1.25 !default;
 
-// $input-bg:                       #fff !default;
+$input-bg:                       #e8e8e8; //#fff !default;
 // $input-bg-disabled:              $gray-lighter !default;
 
 // $input-color:                    $gray !default;
@@ -347,12 +347,12 @@ $font-size-h6: rem-calc(17); //1rem !default;
 // $input-btn-border-width:         $border-width !default; // For form controls and buttons
 // $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
 
-// $input-border-radius:            $border-radius !default;
+$input-border-radius:            0; //$border-radius !default;
 // $input-border-radius-lg:         $border-radius-lg !default;
 // $input-border-radius-sm:         $border-radius-sm !default;
 
 // $input-bg-focus:                 $input-bg;
-// $input-border-focus:             #66afe9 !default;
+$input-border-focus:             transparent; ////black; //#66afe9 !default;
 // $input-box-shadow-focus:         rgba(102,175,233,.6) !default;
 // $input-color-focus:              $input-color;
 

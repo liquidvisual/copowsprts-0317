@@ -42,9 +42,12 @@ layout: base__page_microsite
 
 					<!-- ADDITIONAL TEXT -->
 					<span class="additional">
-						<span class="text-1 text-bold">{{ item.additional }}</span>
+						{% if item.additional %}
+							<span class="text-1 text-bold">{{ item.additional }}</span>
+						{% endif %}
+
 						{% if item.demo_available %}
-						<span class="text-2 text-bold">Demo available</span>
+							<span class="text-2 text-bold">Demo available</span>
 						{% endif %}
 					</span>
 

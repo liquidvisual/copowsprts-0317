@@ -2,10 +2,107 @@
 layout: base__page
 ---
 
+{% assign settings = site.data.settings %}
+
 <div class="container">
 	<div class="row">
-		<div class="col-md-7">
-			{{ content }}
+		<div class="col-lg-5 col-xl-4">
+
+			<!-- CONTACT BOX -->
+			<div class="side-box mb-4">
+
+				<!-- HEADER -->
+				<header class="side-box-header">
+					<div class="row">
+						<div class="col-10">
+							<h2 class="h4 text-extra-bold">Get in touch</h2>
+						</div>
+						<div class="col-2">
+							<i class="fa fa-comments"></i>
+						</div>
+					</div>
+				</header>
+
+				<!-- BODY -->
+				<div class="side-box-body">
+					<a href="tel:{{ settings.offices[0].phone }}">
+					    <i class="fa fa-phone"></i>&nbsp;
+					    <span>{{ settings.offices[0].phone }}</span>
+					</a>
+					<br>
+					<a href="mailto:{{ settings.offices[0].email }}">
+					    <i class="fa fa-envelope"></i>&nbsp;
+					    <span>{{ settings.offices[0].email }}</span>
+					</a>
+					<div class="spacer mb-4"></div>
+					<h3 class="mb-4 h5 text-extra-bold">Send us an email...</h4>
+					{% include form_basic.html %}
+					<div class="spacer mb-3"></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-lg-7 col-xl-8">
+
+			<!-- TRADING HOURS -->
+			<div class="side-box is-trading-hours">
+				<div class="row">
+					<div class="col-md-4">
+						<h2 class="h4 text-extra-bold">Trading Hours &nbsp;&nbsp;&nbsp;<i class="fa fa-clock-o"></i></h2>
+					</div>
+					<div class="col-md-8">
+						<ul class="block-grid-md-3">
+							<li><h3 class="h5 mb-0 text-bold">Monday - Friday</h3> 9.00am - 5.30pm</li>
+							<li><h3 class="h5 mb-0 text-bold">Thursday</h3> 9.00am - 7.00pm</li>
+							<li><h3 class="h5 mb-0 text-bold">Saturday</h3> 9.00am - 1.00pm</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="spacer mb-4"></div>
+
+			<!-- LOCATIONS -->
+			<div class="row">
+				{% for item in settings.offices %}
+					<div class="col-12 col-xl-6">
+						<div class="side-box mb-4">
+
+							<!-- HEADER -->
+							<header class="side-box-header">
+								<div class="row">
+									<div class="col-10">
+										<h2 class="h4 text-extra-bold">{{ item.title }}</h2>
+									</div>
+									<div class="col-2">
+										<i class="fa fa-map-marker"></i>
+									</div>
+								</div>
+							</header>
+
+							<!-- BODY -->
+							<div class="side-box-body">
+								<a href="#google-map-url-here" class="d-flex">
+								    <i class="fa fa-home mr-2"></i>
+								    <span>{{ item.address }}</span>
+								</a>
+							</div>
+
+							<!-- GOOGLE MAP -->
+							<div class="lv-google-map">
+							    <iframe width="100%"
+							            height="275"
+							            frameborder="0"
+							            style="pointer-events: none;"
+							            src="https://maps.google.com/maps?hl=en&q={{item.address | strip_html }}&z=21&ie=UTF8&t=roadmap&z=16&iwloc=A&output=embed">
+							    </iframe>
+							</div>
+
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+
 		</div>
 	</div>
 </div>

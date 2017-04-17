@@ -1,0 +1,123 @@
+/*
+    SIDEBAR.CSS
+
+    - Last updated: 17.04.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//--------------------------------------------------------------------
+// SIDEBAR
+//--------------------------------------------------------------------
+
+.side-box {
+	background: #1e1d1d;
+
+	//=========================================
+	//
+	//=========================================
+
+	&.is-trading-hours {
+		padding: rem-calc(30 30 10 30);
+
+		@include media-breakpoint-up(md) {
+		    padding: rem-calc(30 30 10 30);
+		}
+	}
+
+	//=========================================
+	// HEADER
+	//=========================================
+
+	.side-box-header {
+		position: relative;
+		padding: rem-calc(20 0 0 0);
+		background: #2c2c2c;
+		z-index: 1;
+
+		@include media-breakpoint-up(md) {
+		    padding: rem-calc(20 30 10 30);
+		}
+
+		&::after {
+			@include media-breakpoint-down(sm) {
+			    content: "";
+			    position: absolute;
+			    top: 0;
+			    left: -15px;
+			    width: calc(100% + 15px * 2);
+			    height: 100%;
+			    background: #2c2c2c;
+			    z-index: -1;
+			}
+		}
+
+		.fa {
+			font-size: rem-calc(35);
+		}
+
+		.fa-wrench {
+			font-size: rem-calc(55);
+
+			@include media-breakpoint-up(lg) {
+			    position: relative;
+			    left: -10px;
+			}
+		}
+	}
+
+	//=========================================
+	// BODY
+	//=========================================
+
+	.side-box-body {
+		position: relative;
+		padding: rem-calc(20 0 0 0);
+		font-size: rem-calc(20);
+		z-index: 1;
+
+		@include media-breakpoint-up(md) {
+		    padding: rem-calc(20 30);
+		}
+
+		&::after {
+			@include media-breakpoint-down(sm) {
+			    content: "";
+			    position: absolute;
+			    top: 0;
+			    left: -15px;
+			    width: calc(100% + 15px * 2);
+			    height: 100%;
+			    background: #1e1d1d;
+			    z-index: -1;
+			}
+		}
+
+		a {
+			color: white;
+
+			.fa {
+				margin-bottom: 5px;
+				width: 36px;
+				height: 36px;
+				line-height: 36px;
+				font-size: 17px;
+				text-align: center;
+				background: #3f3f3f;
+				border-radius: 100%;
+			}
+
+			&:hover {
+				color: darken(white, 20%);
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================
