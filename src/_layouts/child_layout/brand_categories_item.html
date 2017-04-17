@@ -18,12 +18,12 @@ layout: base__page_microsite
 	<ul class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3 block-grid-xl-4">
 		{% for item in product_items %}
 			<li>
-				<a class="btn-card" href="{{ page.url }}/mx/">
+				<a class="card-product" href="{{ page.url }}/mx/">
 
 					<!-- IMAGE -->
 					<figure class="img">
 						<img width="100%" src="{{ item.image }}" alt="{{ item.title }}">
-						<span class="btn-card-bg" style="background-image: url({{ item.image }})"></span>
+						<span class="card-product-bg" style="background-image: url({{ item.image }})"></span>
 					</figure>
 
 					<!-- HEADER -->

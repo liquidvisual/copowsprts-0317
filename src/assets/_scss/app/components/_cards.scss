@@ -1,0 +1,84 @@
+/*
+    CARDS.CSS
+
+    - Last updated: 17.04.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// CARDS
+//-----------------------------------------------------------------
+
+.card-product {
+    display: block;
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: white;
+        background: #1a1919;
+        padding: rem-calc(20);
+    }
+
+    .img {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .card-product-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        transition: transform 300ms ease;
+    }
+
+    .is-learner-approved {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .has-old-price {
+        color: #e9bd9f;
+    }
+
+    .subheader {
+        padding: rem-calc(15 20);
+    }
+
+    .additional {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .text-1,
+    .text-2 {
+        display: block;
+        background: rgba(#383737, 0.95%);
+        color: white;
+        padding: 5px 15px;
+        font-size: rem-calc(16);
+    }
+
+    .text-2 {
+        background: rgba(#383737, 0.85%);
+    }
+
+    &:hover .card-product-bg {
+        @include media-breakpoint-up(xl) {
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+//=========================================
+//
+//=========================================

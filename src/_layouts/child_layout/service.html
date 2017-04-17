@@ -2,13 +2,26 @@
 layout: base__page
 ---
 
+{% assign settings = site.data.settings %}
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-7">
 			{{ content }}
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4 offset-md-1">
 			<h3>Contact us to book your service or repair</h3>
+
+			<a href="tel:{{ settings.offices[0].phone }}">
+			    <i class="fa fa-phone"></i>&nbsp;
+			    <span class="text hidden-sm-down">{{ settings.offices[0].phone }}</span>
+			</a>
+			<br>
+			<a class="hidden-sm-down" href="mailto:{{ settings.offices[0].email }}">
+			    <i class="fa fa-envelope"></i>&nbsp;  {{ settings.offices[0].email }}
+			</a>
+
+			<img width="100%" src="/assets/img/content/service-pic.jpg" alt="Bike">
 		</div>
 	</div>
 </div>

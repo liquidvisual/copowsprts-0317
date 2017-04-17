@@ -7,6 +7,11 @@
 //-----------------------------------------------------------------
 // VARIABLES
 //-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// BTN LINK
+//
+// Simple anchor link with arrow icon. Seen top right of sections
+//-----------------------------------------------------------------
 
 .btn-link {
     color: white;
@@ -17,10 +22,59 @@
 }
 
 //-----------------------------------------------------------------
+// HERO TILE
+// Used to display brands on homepage hero
+//-----------------------------------------------------------------
+
+.btn-hero-tile {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    .btn-hero-tile-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        transition: transform 300ms ease;
+    }
+
+    .fa-angle-right {
+        content: '\f105';
+        position: absolute;
+        bottom: 0;
+        right: rem-calc(25);
+        font-size: rem-calc(50);
+        color: white;
+        text-shadow: 0px 1px 4px rgba(black, 0.4);
+        transition: transform 300ms ease;
+
+        @include media-breakpoint-up(md) {
+            font-size: rem-calc(70);
+        }
+
+        @include media-breakpoint-up(xl) {
+            bottom: 10px;
+        }
+    }
+
+    &:hover {
+        .btn-hero-tile-bg {
+            @include media-breakpoint-up(xl) {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+//-----------------------------------------------------------------
 // BTN TILE (used on brand index hero)
 //-----------------------------------------------------------------
 
-.btn-tile {
+.btn-hero {
     display: block;
     padding: rem-calc(15);
     margin: rem-calc(0 0 5 0);
@@ -53,77 +107,6 @@
     &:hover {
         @include media-breakpoint-up(xl) {
             transform: scale(0.98);
-        }
-    }
-}
-
-//-----------------------------------------------------------------
-// BTN
-//-----------------------------------------------------------------
-
-.btn-card {
-    display: block;
-    position: relative;
-
-    h1, h2, h3, h4, h5, h6 {
-        color: white;
-        background: #1a1919;
-        padding: rem-calc(20);
-    }
-
-    .img {
-        position: relative;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    .btn-card-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-position: center center;
-        background-size: cover;
-        transition: transform 300ms ease;
-    }
-
-    .is-learner-approved {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
-
-    .has-old-price {
-        color: #e9bd9f;
-    }
-
-    .subheader {
-        padding: rem-calc(15 20);
-    }
-
-    .additional {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-    }
-
-    .text-1,
-    .text-2 {
-        display: block;
-        background: rgba(#383737, 0.95%);
-        color: white;
-        padding: 5px 15px;
-        font-size: rem-calc(16);
-    }
-
-    .text-2 {
-        background: rgba(#383737, 0.85%);
-    }
-
-    &:hover .btn-card-bg {
-        @include media-breakpoint-up(xl) {
-            transform: scale(1.05);
         }
     }
 }

@@ -79,11 +79,11 @@ $brand-primary-ktm: #ff6600;
 //-----------------------------------------------------------------
 
 .theme-kawasaki {
-	.btn-tile {
+	.btn-hero {
 		background: rgba($brand-primary-kawasaki, 0.77);
 	}
 
-	.btn-card {
+	.card-product {
 		h1, h2, h3, h4, h5, h6 {
 			background: $brand-primary-kawasaki;
 		}
@@ -94,11 +94,11 @@ $brand-primary-ktm: #ff6600;
 }
 
 .theme-ktm {
-	.btn-tile {
+	.btn-hero {
 		background: rgba($brand-primary-ktm, 0.77);
 	}
 
-	.btn-card {
+	.card-product {
 		h1, h2, h3, h4, h5, h6 {
 			background: $brand-primary-ktm;
 		}
