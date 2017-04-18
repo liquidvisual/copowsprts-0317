@@ -12,15 +12,23 @@
 //-----------------------------------------------------------------
 
 .lv-page-loader {
-    display: flex;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #333333;
-	z-index: 2147483647;
-    animation: page-loader-fadeout 1s ease 1.0s alternate 1 forwards;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 2147483647;
+    opacity: 1;
+
+    &.force-finish {
+        animation: page-loader-fadeout 1s ease 0s alternate 1 forwards;
+    }
+}
+
+html.has-loaded .lv-page-loader {
+    animation: page-loader-fadeout 1s ease 0.1s alternate 1 forwards;
 }
 
 //-----------------------------------------------------------------
