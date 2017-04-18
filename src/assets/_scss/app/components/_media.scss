@@ -20,10 +20,16 @@
 
 	.fa-angle-right {
 		position: absolute;
-		bottom: 10px;
-		right: 15px;
-		font-size: rem-calc(35);
+		bottom: 5px;
+		right: 10px;
+		font-size: rem-calc(25);
 		color: #959494;
+
+		@include media-breakpoint-up(md) {
+		    font-size: rem-calc(35);
+		    bottom: 10px;
+		    right: 15px;
+		}
 	}
 
 	&:hover {
@@ -37,6 +43,15 @@
 	.media-img {
 		position: relative;
 		margin: 0; // reset
+
+		// don't target learner icon
+		img:first-of-type {
+			width: 110px;
+
+			@include media-breakpoint-up(md) {
+			    width: rem-calc(153);
+			}
+		}
 
 		.is-learner-approved {
 			position: absolute;
@@ -54,8 +69,22 @@
 		padding: rem-calc(15 15 0 0);
 		line-height: 1.4;
 		overflow: hidden;
-
 		max-height: 99px; // test?
+		font-size: rem-calc(15);
+
+		h3 {
+			@include media-breakpoint-down(md) {
+			    font-size: rem-calc(16);
+			}
+
+			@include media-breakpoint-down(sm) {
+			    font-size: rem-calc(14);
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+		    font-size: rem-calc(14);
+		}
 
 		.has-old-price {
 			color: #f9424d;

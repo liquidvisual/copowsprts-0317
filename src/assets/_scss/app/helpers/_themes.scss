@@ -34,6 +34,18 @@ $brand-primary-ktm: #ff6600;
 	}
 
 	//=========================================
+	//
+	//=========================================
+
+	.lv-topbar ul {
+	    font-size: rem-calc(13);
+
+	    @include media-breakpoint-up(xxl) {
+	        font-size: rem-calc(15);
+	    }
+	}
+
+	//=========================================
 	// TOP
 	//=========================================
 
@@ -48,6 +60,14 @@ $brand-primary-ktm: #ff6600;
 	//=========================================
 
 	.headroom--top {
+		.lv-topbar {
+			transition: none;
+
+			@include media-breakpoint-only(xl) {
+			    margin-top: 35px;
+			}
+		}
+
 		.global-header-body .logo {
 			@include media-breakpoint-up(md) {
 			    margin-top: 30px;
@@ -67,6 +87,10 @@ $brand-primary-ktm: #ff6600;
 		 		}
 
 		 		@include media-breakpoint-up(xl) {
+		 			width: 400px;
+		 		}
+
+		 		@include media-breakpoint-up(xxl) {
 		 			width: 472px;
 		 		}
 		 	}
@@ -81,6 +105,11 @@ $brand-primary-ktm: #ff6600;
 .theme-kawasaki {
 	.btn-hero {
 		background: rgba($brand-primary-kawasaki, 0.77);
+		&:hover {
+		    @include media-breakpoint-up(xl) {
+		        background: rgba(lighten($brand-primary-kawasaki, 5%), 0.95);
+		    }
+		}
 	}
 
 	.card-product {
@@ -93,9 +122,18 @@ $brand-primary-ktm: #ff6600;
 	}
 }
 
+//-----------------------------------------------------------------
+// THEME KTM
+//-----------------------------------------------------------------
+
 .theme-ktm {
 	.btn-hero {
 		background: rgba($brand-primary-ktm, 0.77);
+		&:hover {
+		    @include media-breakpoint-up(xl) {
+		        background: rgba(lighten($brand-primary-ktm, 5%), 0.95);
+		    }
+		}
 	}
 
 	.card-product {

@@ -1,0 +1,50 @@
+{% assign brand = page.brand %}
+{% assign brand_logo = "/assets/img/content/logo-" | append: brand | append: ".png" %}
+{% assign title = include.title %}
+
+<header class="section-header">
+    <div class="row no-gutters">
+        <div class="col-md-6 d-flex flex-column flex-md-row align-items-md-center">
+
+            {% if brand %}
+                <img class="mr-3 hidden-md-down" width="130" src="{{ brand_logo }}" alt="{{ brand }}">
+            {% endif %}
+
+            <h2 class="h3 mb-0 text-extra-bold text-uppercase">
+                Featured {{ title }}
+            </h2>
+
+            {% if page.url == "/" %}
+                <div class="divider pb-3 mb-3 hidden-md-up"></div>
+            {% endif %}
+
+        </div>
+
+        <div class="col-md-6 d-flex flex-column flex-md-row align-items-md-center">
+
+            {% if page.url == "/" %}
+
+                <div class="ml-md-auto">
+                    <small class="is-small-fit text-uppercase mr-1"><b>View All {{ title }} for</b></small>
+                    <br class="hidden-md-up">
+                    <a href="http://yamaha.com"><img class="logo mr-1" width="124" src="/assets/img/content/logo-yamaha.png" alt="Yamaha"></a>
+                    <a href="/ktm/"><img class="logo mr-1" width="94" src="/assets/img/content/logo-ktm.png" alt="KTM"></a>
+                    <a href="/kawasaki/"><img class="logo" width="130" src="/assets/img/content/logo-kawasaki.png" alt="Kawasaki"></a>
+                </div>
+
+                <div class="spacer mb-4 hidden-md-up"></div>
+
+            {% else %}
+
+                <a class="btn-link ml-md-auto hidden-sm-down" href="#specials">
+                    <small class="text-uppercase"><b>View All {{ brand }} {{ title }} <i class="fa fa-angle-right"></i></b></small>
+                </a>
+
+            {% endif %}
+
+        </div>
+    </div>
+
+    <div class="divider mb-4 hidden-sm-down"></div>
+
+</header>

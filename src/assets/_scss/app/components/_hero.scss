@@ -13,7 +13,8 @@
 $hero-sm-height:            auto; //rem-calc(163); // IMPORTANT: if carousel slides, you need a fixed height
 $hero-md-height:            rem-calc(600);
 $hero-lg-height:            rem-calc(700);
-$hero-xl-height:            rem-calc(834);
+$hero-xl-height:            rem-calc(750); //
+$hero-xxl-height:           rem-calc(834);
 
 $hero-sm-height-preset-1:   auto; // Appears on product landing
 $hero-md-height-preset-1:   rem-calc(689);
@@ -53,6 +54,10 @@ $hero-lg-height-preset-2:   rem-calc(526);
 
     @include media-breakpoint-up(xl) {
         height: $hero-xl-height;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        height: $hero-xxl-height;
     }
 
     //=========================================

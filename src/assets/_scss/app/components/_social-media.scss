@@ -22,10 +22,12 @@
 	}
 
 	a {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 44px;
 		height: 44px;
-		line-height: 48px;
+		line-height: 0;
 		font-size: rem-calc(23);
 		color: white;
 		text-align: center;

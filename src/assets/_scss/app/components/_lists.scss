@@ -22,11 +22,29 @@
     }
 }
 
+//=========================================
+// USED ON MASONRY SPECIALS (Homepage)
+//=========================================
+
 .block-grid-condensed {
     margin: -7px;
 
     li {
         padding: 7px;
+    }
+}
+
+//=========================================
+// USED ON PRODUCTS (Homepage)
+//=========================================
+
+.block-grid-condensed-lg-down {
+    @include media-breakpoint-down(lg) {
+        margin: -10px;
+
+        li {
+            padding: 10px;
+        }
     }
 }
 
@@ -75,8 +93,6 @@
 //         margin-bottom: 10px;
 //     }
 // }
-
-
 
 //=========================================
 //

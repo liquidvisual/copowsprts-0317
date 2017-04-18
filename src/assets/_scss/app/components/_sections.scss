@@ -15,6 +15,56 @@
     padding: rem-calc(40 0);
 }
 
+//=========================================
+// SECTION HEADER
+//=========================================
+
+.section-header {
+
+    .logo {
+        transition: transform 300ms ease;
+
+        @include media-breakpoint-down(lg) {
+            width: auto;
+            height: 25px;
+        }
+
+        @include media-breakpoint-down(md) {
+            width: auto;
+            height: 16px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: auto;
+            height: 20px;
+        }
+
+        &:hover {
+            @include media-breakpoint-up(xl) {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .is-small-fit {
+        @include media-breakpoint-only(md) {
+            font-size: rem-calc(9);
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// LIGHT
+//-----------------------------------------------------------------
+
+.section-light {
+    background: white;
+}
+
+//-----------------------------------------------------------------
+// DARK
+//-----------------------------------------------------------------
+
 .section-dark {
     background: #1d1c1c;
 
@@ -23,18 +73,9 @@
     }
 }
 
-.section-light {
-	background: white;
-}
-
-.section-inverse {
-	color: white;
-
-	h1, h2, h3, h4, h5, h6 {
-		color: white;
-	}
-}
-
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
 //=========================================
 //
 //=========================================

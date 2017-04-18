@@ -50,12 +50,26 @@ html, body {
 //-----------------------------------------------------------------
 
 .page-content {
-	padding-top: rem-calc(70);
-	background: url(/assets/img/layout/bg-dark.jpg) no-repeat top center;
-	background-size: 100%;
+	padding: $spacer*2 0;
 
 	@include media-breakpoint-up(md) {
-	    padding-top: $spacer*2.5;
+	    padding: $spacer*3 0;
+	    background: url(/assets/img/layout/bg-dark.jpg) no-repeat top center;
+	    background-size: 100%;
+	}
+}
+
+//=========================================
+// IS FLUSH WITH FOOTER
+// Edge case to break out of internal
+// layout content padding.
+//=========================================
+
+.is-flush-with-footer {
+	margin-bottom: -$spacer*2;
+
+	@include media-breakpoint-up(md) {
+	    margin-bottom: -$spacer*3;
 	}
 }
 

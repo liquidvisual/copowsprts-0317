@@ -3,7 +3,7 @@ layout: child_layout/brand
 title: Kawasaki
 permalink: /kawasaki/
 hero: /assets/img/content/hero-3-full.jpg
-hero_mobile: http://placehold.it/30x30/88a8b5
+hero_mobile: /assets/img/content/hero-3-mobile.jpg
 logo: /assets/img/content/logo-kawasaki.png
 side_nav_id: 3
 brand: kawasaki
