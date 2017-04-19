@@ -80,6 +80,12 @@ $header-lg-height: 280px !default;
     background: rgba(black, 0.63);
     color: white;
 
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
     @include media-breakpoint-up(md) {
         padding: $spacer*1.5 0 $spacer 0;
         // padding-bottom: $spacer;
