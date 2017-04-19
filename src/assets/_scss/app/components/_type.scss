@@ -31,11 +31,11 @@ h4, h5, h6 {
 }
 
 .text-extra-bold {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 .text-bold {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 //-----------------------------------------------------------------
@@ -44,9 +44,11 @@ h4, h5, h6 {
 
 .page-content h1,
 .page-content h2,
-.page-content h3 {
+.page-content h3,
+.page-content h4,
+.page-content h5 {
     margin-bottom: $spacer*1.5;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 //-----------------------------------------------------------------
@@ -90,6 +92,13 @@ p, ul, ol, td {
 //-----------------------------------------------------------------
 //
 //-----------------------------------------------------------------
+
+.iframe {
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling:touch;
+}
+
 //=========================================
 //
 //=========================================

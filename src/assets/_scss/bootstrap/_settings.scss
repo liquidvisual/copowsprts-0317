@@ -273,7 +273,7 @@ $font-size-h6: rem-calc(17); //1rem !default;
 // // Customizes the `.table` component with basic values, each used across all table variations.
 
 // $table-cell-padding:            .75rem !default;
-// $table-sm-cell-padding:         .3rem !default;
+$table-sm-cell-padding:         .45rem; //.3rem !default;
 
 // $table-bg:                      transparent !default;
 // $table-bg-accent:               rgba(0,0,0,.05) !default;
@@ -281,7 +281,7 @@ $font-size-h6: rem-calc(17); //1rem !default;
 // $table-bg-active:               $table-bg-hover !default;
 
 // $table-border-width:            $border-width !default;
-// $table-border-color:            $gray-lighter !default;
+$table-border-color:            rgba(white, 0.1); //$gray-lighter !default;
 
 
 // // Buttons

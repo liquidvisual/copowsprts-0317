@@ -53,6 +53,10 @@
             width: 160px; // hardcoded recommendation
         }
 
+        @include media-breakpoint-up(lg) {
+            width: 190px;
+        }
+
         @include media-breakpoint-up(xl) {
             width: auto;
             left: 25px;

@@ -1,0 +1,33 @@
+---
+layout: base__page_microsite
+---
+
+{% assign media = page.media %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-7 col-xl-6">
+
+			<!-- PRICE / ADDITIONAL -->
+			<div class="card-product">
+				<h2 class="subheader mb-0 text-bold h5 text-uppercase">
+					<span class="has-old-price">Was $12,195</span>&nbsp;&nbsp;
+					<span class="price">Now $12,195</span>
+				</h2>
+				<h3 class="subheader is-tinted text-bold h5">
+					<span class="text-bold">Demo available in store</span>
+				</h3>
+			</div>
+
+			<div class="spacer mb-4 hidden-md-down"></div>
+
+			{{ content }}
+
+		</div>
+		<div class="col-md-5 col-xl-6">
+			{% for item in media %}
+				<img width="100%" src="{{ item.url }}" alt="{{ item.title }}">
+			{% endfor %}
+		</div>
+	</div>
+</div>

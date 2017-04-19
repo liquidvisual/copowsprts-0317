@@ -1,5 +1,5 @@
 ---
-layout: child_layout/brand
+layout: child_layout/brand_categories_product_item
 title: 450 SX-F Factory Edition
 permalink: /kawasaki/new-bikes/mx/450-sx-f-factory-edition/
 hero: /assets/img/content/hero-2.jpg
@@ -8,68 +8,89 @@ breadcrumbs: true
 learner_approved: true
 brand: kawasaki
 theme: theme-kawasaki
+
+media:
+  - title: Bike product shot
+    url: /assets/img/content/product-shot-1.jpg
+
+  - title: Bike product shot
+    url: /assets/img/content/product-shot-2.jpg
+
+  - title: Bike product shot
+    url: /assets/img/content/product-shot-3.jpg
 ---
 
-## The perfect launchpad into the MX world
+## We don't just build replicas, we build factory editions
 
-A real KTM for young crossers from the age of about 4 to 10 and a height of up to approx. 1.30&nbsp;m. A real motorcycle with high quality components that's child's play to control and whose engine excels with linear power development and a beginner-friendly automatic clutch.
+Championship winning bikes, like this one. Thanks to its compact SOHC (single overhead camshaft) engine delivering explosive but controllable power, it is the weapon of choice for our Factory Teams around the world. Experts will notice its revolutionary WP AER 48 forks, the anodized triple clamps and sprocket, its upgraded Akrapovič muffler, the orange frame or the D.I.D DirtStar rims. The rest will only see a blur blasting past. Is it Ryan Dungey? Possibly. Or it could be you.
 
-#### Engine
+<br>
 
-<table border="0" class="contenttable">
+### Engine
+
+<table>
+	<thead hidden>
+		<tr>
+			<th>Item</th>
+			<th>Description</th>
+		</tr>
+	</thead>
 	<tbody>
-		<tr class="tr-even">
-			<th class="td-0">Design</th>
-			<td class="td-1 td-last">1-cylinder 2-stroke engine, water-cooled, with reed intake</td>
+		<tr>
+			<th>Design</th>
+			<td>1-cylinder 2-stroke engine, water-cooled, with reed intake</td>
 		</tr>
-		<tr class="tr-odd">
-			<th class="td-0">Displacement</th>
-			<td class="td-1 td-last">49.0&nbsp;cm³</td>
+		<tr>
+			<th>Design</th>
+			<td>1-cylinder 2-stroke engine, water-cooled, with reed intake</td>
 		</tr>
-		<tr class="tr-even">
-			<th class="td-0">Bore</th>
-			<td class="td-1 td-last">39.5&nbsp;mm</td>
+		<tr>
+			<th>Displacement</th>
+			<td>49.0&nbsp;cm³</td>
 		</tr>
-		<tr class="tr-odd">
-			<th class="td-0">Stroke</th>
-			<td class="td-1 td-last">40&nbsp;mm</td>
+		<tr>
+			<th>Bore</th>
+			<td>39.5&nbsp;mm</td>
 		</tr>
-		<tr class="tr-even">
-			<th class="td-0">Starting aid</th>
-			<td class="td-1 td-last">Kickstarter</td>
+		<tr>
+			<th>Stroke</th>
+			<td>40&nbsp;mm</td>
 		</tr>
-		<tr class="tr-odd">
-			<th class="td-0">Transmission</th>
-			<td class="td-1 td-last">Rigid 1-stage reduction gear</td>
+		<tr>
+			<th>Starting aid</th>
+			<td>Kickstarter</td>
 		</tr>
-		<tr class="tr-even">
-			<th class="td-0">Engine lubrication</th>
-			<td class="td-1 td-last">Separate lubrication</td>
+		<tr>
+			<th>Transmission</th>
+			<td>Rigid 1-stage reduction gear</td>
 		</tr>
-		<tr class="tr-odd">
-			<th class="td-0">Primary gear ratio</th>
-			<td class="td-1 td-last">33:61 straight cut spur gear</td>
+		<tr>
+			<th>Engine lubrication</th>
+			<td>Separate lubrication</td>
 		</tr>
-		<tr class="tr-even">
-			<th class="td-0">Final drive</th>
-			<td class="td-1 td-last">10:42</td>
+		<tr>
+			<th>Primary gear ratio</th>
+			<td>33:61 straight cut spur gear</td>
 		</tr>
-		<tr class="tr-odd">
-			<th class="td-0">Cooling system</th>
-			<td class="td-1 td-last">Liquid cooling system</td>
+		<tr>
+			<th>Final drive</th>
+			<td>10:42</td>
 		</tr>
-		<tr class="tr-even">
-			<th class="td-0">Clutch</th>
-			<td class="td-1 td-last">Multidisc automatic clutch on the main shaft / centrifugal force</td>
+		<tr>
+			<th>Cooling system</th>
+			<td>Liquid cooling system</td>
 		</tr>
-		<tr class="tr-odd">
-			<th class="td-0">Ignition system</th>
-			<td class="td-1 td-last">SELETTRA 2p D36</td>
+		<tr>
+			<th>Clutch</th>
+			<td>Multidisc automatic clutch on the main shaft / centrifugal force</td>
 		</tr>
+		<tr>
+			<th>Ignition system</th>
+			<td>SELETTRA 2p D36</td>
 		</tr>
-		<tr class="tr-even">
-			<th class="td-0">Total fuel tank capacity approx.</th>
-			<td class="td-1 td-last">2.0&nbsp;l<br> Unleaded premium fuel (95 RON)</td>
+		<tr>
+			<th>Total fuel tank capacity approx.</th>
+			<td>2.0&nbsp;l<br> Unleaded premium fuel (95 RON)</td>
 		</tr>
 	</tbody>
 </table>

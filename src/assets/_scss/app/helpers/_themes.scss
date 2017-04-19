@@ -119,6 +119,9 @@ $brand-primary-ktm: #ff6600;
 		.subheader {
 			background: darken($brand-primary-kawasaki, 5%);
 		}
+		.subheader.is-tinted {
+			background: darken($brand-primary-kawasaki, 8%);
+		}
 	}
 }
 
@@ -142,6 +145,9 @@ $brand-primary-ktm: #ff6600;
 		}
 		.subheader {
 			background: darken($brand-primary-ktm, 6%);
+		}
+		.subheader.is-tinted {
+			background: darken($brand-primary-ktm, 9%);
 		}
 	}
 }
