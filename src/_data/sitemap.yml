@@ -10,11 +10,11 @@
   children:
     - title: New Bikes
       url: /ktm/new-bikes/
-      include_children_in_nav: true
+      include_children_in_nav: false
       children:
         - title: MX
           url: /ktm/new-bikes/mx/
-          include_children_in_nav: true
+          include_children_in_nav: false
           children:
             - title: 450 SX-F Factory Edition
               url: /ktm/new-bikes/mx/450-sx-f-factory-edition/
@@ -37,11 +37,11 @@
   children:
     - title: New Bikes
       url: /kawasaki/new-bikes/
-      include_children_in_nav: true
+      include_children_in_nav: false
       children:
         - title: MX
           url: /kawasaki/new-bikes/mx/
-          include_children_in_nav: true
+          include_children_in_nav: false
           children:
             - title: 450 SX-F Factory Edition
               url: /kawasaki/new-bikes/mx/450-sx-f-factory-edition/

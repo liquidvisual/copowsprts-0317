@@ -13,10 +13,10 @@ layout: base__page_microsite
 		{% include header_section.html title="Specials" %}
 
 		<!-- PRODUCTS -->
-		<ul class="block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
+		<ul class="block-grid-condensed-lg-down block-grid-xs-1 block-grid-md-2 block-grid-xl-3">
 			{% for item in product_items | limit: 6 %}
 				<li>
-					<a href="/kawasaki{{ item.url }}">
+					<a href="/{{ brand }}/new-bikes/mx{{ item.url }}">
 						<div class="media media-btn">
 							<figure class="media-img mr-3">
 								<img width="153" src="/assets/img/content/bike-item.jpg" alt="{{ item.title }}">

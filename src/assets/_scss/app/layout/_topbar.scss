@@ -13,7 +13,6 @@
 
 .lv-topbar {
     margin: 30px -15px auto auto;
-    // margin-top: 30px;
     transition: margin 300ms ease;
 }
 
@@ -93,7 +92,7 @@
 }
 
 //-----------------------------------------------------------------
-// DROPDOWN ANCHORS
+// DROPDOWN ANCHOR HOVERS
 //-----------------------------------------------------------------
 
 .lv-topbar .has-dropdown:hover > .top-parent-anchor {
@@ -116,15 +115,7 @@
 }
 
 //=========================================
-// ACTIVE STATE (OPTIONAL)
-//=========================================
-
-// .lv-topbar .has-dropdown.active:hover > .top-parent-anchor {
-//     background: $top-parent-anchor-bg-color;
-// }
-
-//=========================================
-// THIRD LEVEL
+// THIRD LEVEL HOVER
 //=========================================
 
 .lv-topbar .dropdown .has-dropdown:hover > .dropdown {
@@ -134,6 +125,14 @@
         visibility: visible;
     }
 }
+
+//=========================================
+// ACTIVE STATE (OPTIONAL)
+//=========================================
+
+// .lv-topbar .has-dropdown.active:hover > .top-parent-anchor {
+//     background: $top-parent-anchor-bg-color;
+// }
 
 //-----------------------------------------------------------------
 // DROPDOWNS
@@ -161,7 +160,7 @@
 }
 
 .lv-topbar .dropdown.is-nav-included,
-.lv-topbar .dropdown.is-nav-included .dropdown {
+.lv-topbar .dropdown.is-nav-included > .dropdown {
     display: block;
 }
 

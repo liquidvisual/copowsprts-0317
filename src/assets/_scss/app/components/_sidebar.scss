@@ -3,19 +3,10 @@
 
     - Last updated: 17.04.17
     - liquidvisual.com
-    - Warning, this is quite a mess.
 */
 //-----------------------------------------------------------------
 // VARIABLES
 //-----------------------------------------------------------------
-//--------------------------------------------------------------------
-// CONTACT BOX
-//--------------------------------------------------------------------
-
-.contact-box {
-	// flex-grow: 1; // only works if the second col is longer
-}
-
 //--------------------------------------------------------------------
 // SIDEBAR
 //--------------------------------------------------------------------
@@ -134,12 +125,6 @@
 	.side-box-body:after {
 		@include media-breakpoint-down(xs) {
 		    background: #1e1d1d;
-		}
-	}
-
-	.side-box-header {
-		@include media-breakpoint-down(xs) {
-		    // background: none;
 		}
 	}
 }

@@ -19,6 +19,24 @@ html {
 }
 
 //-----------------------------------------------------------------
+// ANCHORS
+//-----------------------------------------------------------------
+
+a {
+    transition: color ease 300ms, background-color ease 300ms;
+}
+
+//-----------------------------------------------------------------
+// PARAGRAPHS
+//-----------------------------------------------------------------
+
+p, ul, ol, td {
+    @include media-breakpoint-up(lg) {
+        font-size: rem-calc(17); //$font-size-lg; //15
+    }
+}
+
+//-----------------------------------------------------------------
 // HEADERS
 //-----------------------------------------------------------------
 
@@ -51,21 +69,17 @@ h4, h5, h6 {
     font-weight: 800;
 }
 
-//-----------------------------------------------------------------
-// ANCHORS
-//-----------------------------------------------------------------
-
-a {
-    transition: color ease 300ms, background-color ease 300ms;
+// Not subheader - appears in product item page
+.page-content h2:not(.subheader) {
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-h3;
+    }
 }
 
-//-----------------------------------------------------------------
-// PARAGRAPHS
-//-----------------------------------------------------------------
-
-p, ul, ol, td {
-    @include media-breakpoint-up(lg) {
-        font-size: rem-calc(17); //$font-size-lg; //15
+// Exception - here for clarity
+.section-header h2.h3 {
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-h4;
     }
 }
 
@@ -90,7 +104,7 @@ p, ul, ol, td {
 }
 
 //-----------------------------------------------------------------
-//
+// IFRAME (appears spare parts)
 //-----------------------------------------------------------------
 
 .iframe {

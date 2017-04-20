@@ -14,6 +14,8 @@ layout: base__page_microsite
 		</div>
 	</div>
 
+	<div class="spacer mb-3"></div>
+
 	<!-- CATEGORY ITEMS -->
 	<ul class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3 block-grid-xl-4">
 		{% for item in product_items %}
@@ -30,7 +32,7 @@ layout: base__page_microsite
 					<h3 data-match-height class="h5 mb-0 text-right text-extra-bold">{{ item.title }}&nbsp;<i class="fa fa-angle-right"></i></h3>
 
 					<!-- PRICE -->
-					<h4 class="subheader h6 text-bold text-right">
+					<h4 class="subheader mb-0 h6 text-bold text-right">
 						<span class="has-old-price">{{ item.price_was }}</span>&nbsp;&nbsp;
 						<span class="price">NOW {{ item.price }}</span>
 					</h4>
