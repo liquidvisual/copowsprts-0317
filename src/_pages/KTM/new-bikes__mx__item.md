@@ -4,6 +4,7 @@ title: Freeride 350 2017
 permalink: /ktm/new-bikes/freeride/freeride-350-2017/
 hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-ktm.png
+enquire_now: true
 learner_approved: false
 breadcrumbs: true
 brand: ktm

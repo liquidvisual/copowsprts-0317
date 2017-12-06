@@ -12,6 +12,41 @@ $(window).on('load', function() {
 });
 
 //-----------------------------------------------------------------
+// MODAL - 06.12.17
+//-----------------------------------------------------------------
+
+// https://github.com/1000hz/bootstrap-validator/issues/336
+// PROBLEMS WITH MODAL - hot patch
+$('#modal-enquiry').on('shown.bs.modal', function () {
+    $(this).find('form').validator('destroy').validator()
+});
+
+var enquiry = getParameterByName('enquiry'); // true?
+
+// https://v4-alpha.getbootstrap.com/components/modal/
+// ?enquiry=true
+if (enquiry) {
+    $('#modal-enquiry').addClass('is-success');
+    // launch modal manually
+    $('#modal-enquiry').modal('show');
+}
+
+//==================================================
+// GET QUERY STRING IN URL
+// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+//==================================================
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+//-----------------------------------------------------------------
 // POPUP GALLERY
 //-----------------------------------------------------------------
 

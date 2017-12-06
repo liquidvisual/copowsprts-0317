@@ -4,6 +4,7 @@ title: 450 SX-F Factory Edition
 permalink: /ktm/new-bikes/mx/450-sx-f-factory-edition/
 hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-ktm.png
+enquire_now: true
 learner_approved: true
 breadcrumbs: true
 brand: ktm

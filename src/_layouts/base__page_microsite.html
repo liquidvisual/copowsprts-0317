@@ -9,6 +9,14 @@ layout: base
     {% if side_nav %} has-height-preset-1 {% else %} has-height-preset-2 {% endif %}
 {% endcapture %}
 
+{% capture enquiry_btn %}
+    {% if page.enquire_now %}
+        <button class="special-btn-enquiry" type="button" data-toggle="modal" data-target="#modal-enquiry">
+            <img width="193" title="Enquire Now" src="/assets/img/layout/enquire-now-btn@2x.png" alt="Enquire Now">
+        </button>
+    {% endif %}
+{% endcapture %}
+
 {% capture learner_approved %}
     {% if page.learner_approved %}<img width="193" src="/assets/img/layout/lams-learner-approved@2x.png" alt="Lams Learner Approved">{% endif %}
 {% endcapture %}
@@ -84,7 +92,7 @@ layout: base
                     {% if page.title_override %}
                         <h2 class="h1">{{ page.title_override }}</h2>
                     {% else %}
-                        <h1>{{ page.title }} {{ learner_approved }}</h1>
+                        <h1>{{ page.title }} <div class="float-xl-right">{{ learner_approved }} {{ enquiry_btn }}</div></h1>
                     {% endif %}
                 </div>
             </header>

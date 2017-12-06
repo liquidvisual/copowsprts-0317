@@ -5,6 +5,7 @@ permalink: /kawasaki/new-bikes/mx/450-sx-f-factory-edition/
 hero: /assets/img/content/hero-2.jpg
 logo: /assets/img/content/logo-kawasaki.png
 breadcrumbs: true
+enquire_now: true
 learner_approved: true
 brand: kawasaki
 theme: theme-kawasaki

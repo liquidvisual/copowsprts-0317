@@ -1,0 +1,61 @@
+{% assign settings = site.data.settings %}
+
+{% comment %}
+<!-- TRIGGER -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-enquiry">
+    <i class="fa fa-angle-right"></i> Enquire Now <i class="fa fa-angle-right"></i>
+</button>
+{% endcomment %}
+
+<div class="modal fade" id="modal-enquiry" tabindex="-1" role="dialog" aria-labelledby="modal-newsletter" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body animated fadeInDown p-0">
+
+                <!-- CONTACT BOX -->
+                <div class="side-box">
+
+                    <!-- HEADER -->
+                    <header class="side-box-header">
+                        <div class="row">
+                            <div class="col-10">
+                                <h2 class="h4 mb-0 text-extra-bold"><i class="fa fa-comment mr-2"></i> Enquire Now</h2>
+                            </div>
+                            <div class="col-2 text-right">
+                                <!-- <i class="fa fa-comments"></i> -->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- BODY DEFAULT -->
+                    <div class="side-box-body">
+                        <a href="tel:{{ settings.offices[0].phone }}">
+                            <i class="fa fa-phone"></i>&nbsp;
+                            <span>{{ settings.offices[0].phone }}</span>
+                        </a>
+                        <br>
+                        <a href="mailto:{{ settings.offices[0].email }}">
+                            <i class="fa fa-envelope"></i>&nbsp;
+                            <span>{{ settings.offices[0].email }}</span>
+                        </a>
+                        <div class="spacer mb-4"></div>
+                        <h3 class="mb-4 h5 text-extra-bold">Send us an email...</h3>
+                        {% include form_basic.html %}
+                    </div>
+
+                    <!-- BODY SUCCESS -->
+                    <div class="alert alert-success">
+                        <h4>Thank you! <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button></h4>
+                        <p>Your enquiry has been submitted successfully.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

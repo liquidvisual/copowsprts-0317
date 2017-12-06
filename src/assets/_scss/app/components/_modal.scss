@@ -1,0 +1,42 @@
+/*
+    MODAL.CSS
+
+    - Last updated: 06.12.17
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+.modal .close {
+	color: white;
+}
+
+.modal .alert .close {
+	color: grey;
+}
+
+// Alert is hidden by default
+.modal {
+	.alert-success {
+		display: none;
+	}
+}
+
+.modal.is-success {
+	.alert-success {
+		display: block;
+	}
+
+	.side-box-header,
+	.side-box-body {
+		display: none;
+	}
+}
+
+//=========================================
+//
+//=========================================

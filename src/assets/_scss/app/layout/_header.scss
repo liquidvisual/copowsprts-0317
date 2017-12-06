@@ -100,17 +100,22 @@ $header-lg-height: 280px !default;
         }
 
         img {
-			width: 80px;
+			width: rem-calc(150); //80px;
 
 			@include media-breakpoint-up(md) {
-			    width: 150px;
+			    width: rem-calc(150);
 			}
 
             @include media-breakpoint-up(lg) {
                 position: relative;
-                top: 10px;
+                top: rem-calc(11);
+                width: rem-calc(193);
+                margin-bottom: rem-calc(10);
+            }
+
+            @include media-breakpoint-up(xl) {
+            	margin-left: rem-calc(10);
                 float: right;
-                width: 193px;
             }
         }
     }

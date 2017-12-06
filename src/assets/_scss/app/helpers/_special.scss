@@ -22,5 +22,35 @@
 }
 
 //=========================================
-//
+// BLUE ENQUIRY BUTTON - 06.12.17
+// NOT reusable - on category item item pages
 //=========================================
+
+.special-btn-enquiry {
+	padding: 0 !important;
+    border: 0;
+    line-height: 0 !important;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: opacity ease 300ms;
+
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        top: 1px; // magic
+    }
+
+    @include media-breakpoint-up(xl) {
+        float: right;
+    }
+
+    &:hover {
+    	opacity: 0.9;
+    }
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
