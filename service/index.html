@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no">
     <meta name="description" content="">
     <title>Service - Coast Powersports</title>
-
-    <!-- CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-    <!-- FAV ICONS -->
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/assets/css/minified.css">
 </head>
 <body class="">
@@ -30,12 +22,18 @@
 
     <!-- WON'T SHOW IF JAVASCRIPT IS DISABLED -->
     <script>
-    var loader = document.getElementById('lv-page-loader');
-    loader.style.display = 'flex';
-    // Prevent loader from getting stuck if body takes too long
-    setTimeout(function() {
-        loader.className += ' force-finish';
-    }, 3100);
+    (function loader() {
+        var loader = document.getElementById('lv-page-loader');
+        loader.style.display = 'flex';
+        // add class when window has fully loaded
+        window.addEventListener('load', function() {
+            document.documentElement.classList.add('has-loaded');
+        });
+        // Prevent loader from getting stuck if body takes too long
+        setTimeout(function() {
+            loader.classList.add('force-finish');
+        }, 1500); // max of 1.5 secs
+    })();
     </script>
     <div class="lv-page">
 
@@ -69,8 +67,7 @@
 
                     <!-- LOGO -->
                     <a class="logo" href="/" title="Coast Powersports" itemprop="url">
-                        <img src="/assets/img/content/logo@2x.png" alt="Coast Powersports" itemprop="logo">
-                    </a>
+                        <img src="/assets/img/content/logo@2x.png" alt="Coast Powersports" itemprop="logo"> </a>
 
                     <!-- HAMBURGER -->
                     <div class="global-header-hamburger hidden-xl-up">
@@ -188,6 +185,11 @@
                                 </ul>
                             </li>
                             <li class="">
+                                <a class="top-parent-anchor" href="/finance/">
+                                    <span class="text">Finance</span>
+                                </a>
+                            </li>
+                            <li class="">
                                 <a class="top-parent-anchor" href="/used-bikes/">
                                     <span class="text">Used Bikes</span>
                                 </a>
@@ -195,6 +197,11 @@
                             <li class="active">
                                 <a class="top-parent-anchor" href="/service/">
                                     <span class="text">Service</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="top-parent-anchor" href="/accessories/">
+                                    <span class="text">Accessories</span>
                                 </a>
                             </li>
                             <li class="">
@@ -277,7 +284,7 @@
         <!-- HERO -->
         <div class="lv-hero-wrapper">
             <div class="lv-hero has-height-preset-2">
-                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero-7.jpg')">
+                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero-4.jpg')">
 
                     <!-- PAGE HEADER -->
                     <header class="page-header">
@@ -334,7 +341,7 @@
         </div>
 
         <!-- FOOTER -->
-        <footer class="global-footer" hiddenx>
+        <footer class="global-footer">
 
             <!-- FOOTER TOP -->
             <section class="global-footer-top">
@@ -534,6 +541,11 @@
                 </ul>
             </li>
             <li class="">
+                <a class="top-parent-anchor" href="/finance/">
+                    <span class="text">Finance</span>
+                </a>
+            </li>
+            <li class="">
                 <a class="top-parent-anchor" href="/used-bikes/">
                     <span class="text">Used Bikes</span>
                 </a>
@@ -541,6 +553,11 @@
             <li class="active">
                 <a class="top-parent-anchor" href="/service/">
                     <span class="text">Service</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="top-parent-anchor" href="/accessories/">
+                    <span class="text">Accessories</span>
                 </a>
             </li>
             <li class="">
@@ -737,41 +754,6 @@
 
     <!-- **** JAVASCRIPT **** -->
     <script src="/assets/scripts/minified.js"></script>
-    <script>
-    $(window).on('load', function() {
-        $('.social-feed-container').socialfeed({
-            // FACEBOOK
-            facebook: {
-                accounts: ['@coastpowersports'],
-                limit: 2,
-                access_token: '1142564202455221|3a2db052ca1e71a576329b99b7d55a5b'
-            },
-            // INSTAGRAM
-            instagram: {
-                accounts: ['@coastpowersports'],
-                limit: 2,
-                //client_id: '88b4730e0e2c4b2f8a09a6184af2e218',
-                //access_token: ''
-                client_id: 'aa2ef3e8118541c0b7c372cfd81e752b',
-                access_token: '3178942332.e029fea.ab1887d8d8024dd69d8b1dafbbfa773b'
-            },
-            // GENERAL SETTINGS
-            length: 200,
-            show_media: true,
-            template: "/social-feed/",
-            // When all the posts are collected and displayed - this function is evoked
-            callback: function() {
-                console.log('all posts are collected');
-                setTimeout(function() {
-                    $('.social-feed-container').masonry();
-                    setTimeout(function() {
-                        $('.social-feed-container').masonry();
-                    }, 800);
-                }, 800);
-            }
-        });
-    });
-    </script>
 
     <!-- NO JAVASCRIPT WARNING -->
     <noscript>
