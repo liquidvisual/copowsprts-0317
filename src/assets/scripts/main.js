@@ -1,12 +1,12 @@
 /*
-    MAIN.JS - Last updated: 06.10.16
+    MAIN.JS - Last updated: 10.04.19, 06.10.16
 */
 //-----------------------------------------------------------------
 // ON LOAD
 //-----------------------------------------------------------------
 
 $(window).on('load', function() {
-    $('html').addClass('has-loaded');
+    // $('html').addClass('has-loaded');
     $('[data-masonry]').masonry();
     lightbox();
 });
