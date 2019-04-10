@@ -1,19 +1,11 @@
 ---
 layout: child_layout/text_page
-title: About
-permalink: /about/
-hero: /assets/img/content/156655_ktm-1290-super-duke-r-my-2017.jpg
+title: Accessories
+permalink: /accessories/
+hero: /assets/img/content/21632_dsc3553.jpg
 ---
 
-## H2. Heading
-
-### H3. Heading
-
-#### H4. Heading
-
-##### H5. Heading
-
-###### H6. Heading
+## Basic Text Page
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

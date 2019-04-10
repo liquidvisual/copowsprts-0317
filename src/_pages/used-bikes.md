@@ -2,7 +2,7 @@
 layout: child_layout/used_bikes
 title: Used Bikes
 permalink: /used-bikes/
-hero: /assets/img/content/hero-0.jpg
+hero: /assets/img/content/hero-7.jpg
 ---
 
 ## Optional heading

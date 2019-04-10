@@ -2,7 +2,7 @@
 layout: child_layout/service
 title: Service
 permalink: /service/
-hero: /assets/img/content/hero-7.jpg
+hero: /assets/img/content/hero-4.jpg
 ---
 
 ## Coast Powersports are proud to be one of Adelaide's premier and most respected service departments

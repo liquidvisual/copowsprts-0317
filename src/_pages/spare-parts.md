@@ -2,7 +2,7 @@
 layout: child_layout/text_page
 title: Spare Parts
 permalink: /spare-parts/
-hero: /assets/img/content/hero-0.jpg
+hero: /assets/img/content/parts.jpg
 ---
 
 ## Basic Text Page

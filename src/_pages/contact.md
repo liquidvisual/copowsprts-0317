@@ -2,7 +2,7 @@
 layout: child_layout/contact
 title: Contact
 permalink: /contact/
-hero: /assets/img/content/hero-4.jpg
+hero: /assets/img/content/21620_dsc3508.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
