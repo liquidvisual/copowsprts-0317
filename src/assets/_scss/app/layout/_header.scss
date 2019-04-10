@@ -23,12 +23,12 @@ $header-lg-height: 280px !default;
 
 .headroom--pinned {
     @include media-breakpoint-down(sm) {
-        transform: translateY(0%);
+        // transform: translateY(0%);
     }
 }
 .headroom--unpinned {
 	@include media-breakpoint-down(sm) {
-    	transform: translateY(-100%);
+    	// transform: translateY(-100%);
 	}
 }
 
@@ -192,7 +192,11 @@ $header-lg-height: 280px !default;
 		width: 170px;
 
 		@include media-breakpoint-up(md) {
-			width: 260px;
+			width: rem-calc(260); // 260px
+		}
+
+		@include media-breakpoint-up(xl) {
+		    width: rem-calc(220); // 260px
 		}
 	}
 }

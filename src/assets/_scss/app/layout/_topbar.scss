@@ -25,7 +25,7 @@
     margin: 0; // reset
     list-style: none; // reset
     font-family: $font-family-sans-serif;
-    font-size: rem-calc(15);
+    // font-size: rem-calc(15);
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -51,7 +51,12 @@
 .lv-topbar a {
     display: block; // [LOCKED]
     padding: rem-calc(10 15);
+    font-size: rem-calc(13);
     color: $body-color;
+
+    @include media-breakpoint-up(xxl) {
+        font-size: rem-calc(14);
+    }
 }
 
 //-----------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*
     THEMES.CSS
 
-    - Last updated: 11.04.17
+    - Last updated: 10.04.19, 11.04.17
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -17,6 +17,12 @@ $brand-primary-ktm: #ff6600;
 
 .theme-home {
 
+	.lv-topbar a {
+	    @include media-breakpoint-only(xl) {
+	        font-size: rem-calc(12);
+	    }
+	}
+
 	//=========================================
 	// PAGE + HERO
 	//=========================================
@@ -31,18 +37,6 @@ $brand-primary-ktm: #ff6600;
 		@include media-breakpoint-up(xl) {
 		    padding-bottom: rem-calc(80);
 		}
-	}
-
-	//=========================================
-	//
-	//=========================================
-
-	.lv-topbar ul {
-	    font-size: rem-calc(13);
-
-	    @include media-breakpoint-up(xxl) {
-	        font-size: rem-calc(15);
-	    }
 	}
 
 	//=========================================
@@ -64,34 +58,38 @@ $brand-primary-ktm: #ff6600;
 			transition: none;
 
 			@include media-breakpoint-only(xl) {
-			    margin-top: 35px;
+			    margin-top: rem-calc(40); // 35px
 			}
 		}
 
 		.global-header-body .logo {
 			@include media-breakpoint-up(md) {
-			    margin-top: 30px;
+			    margin-top: rem-calc(36); // [LOCKED]
 			}
 
 			@include media-breakpoint-up(lg) {
-			    margin-top: 70px;
+			    margin-top: rem-calc(65); // [LOCKED]
+			}
+
+			@include media-breakpoint-up(xl) {
+			    margin-top: rem-calc(60); // [LOCKED]
 			}
 
 		 	img {
 		 		@include media-breakpoint-up(md) {
-		 			width: 364px;
+		 			width: rem-calc(364);
 		 		}
 
 		 		@include media-breakpoint-up(lg) {
-		 			width: 400px;
+		 			width: rem-calc(400);
 		 		}
 
 		 		@include media-breakpoint-up(xl) {
-		 			width: 400px;
+		 			width: rem-calc(260); // 400px
 		 		}
 
 		 		@include media-breakpoint-up(xxl) {
-		 			width: 472px;
+		 			width: rem-calc(400); // 364px
 		 		}
 		 	}
 		}

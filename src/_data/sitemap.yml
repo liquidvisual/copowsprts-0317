@@ -58,11 +58,17 @@
     - title: Used Bikes
       url: /kawasaki/new-bikes/
 
+- title: Finance
+  url: /finance/
+
 - title: Used Bikes
   url: /used-bikes/
 
 - title: Service
   url: /service/
+
+- title: Accessories
+  url: /accessories/
 
 - title: Spare Parts
   url: /spare-parts/

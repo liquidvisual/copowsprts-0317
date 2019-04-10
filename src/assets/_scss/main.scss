@@ -2,32 +2,38 @@
 /*
     MAIN.CSS
 
-    - Last updated: 06.10.16
+    - Last updated: 10.04.19, 06.10.16
     - liquidvisual.com
 */
 //-----------------------------------------------------------------
-// REM CALC
+// MIXINS
 //-----------------------------------------------------------------
 
-@import "../webvisual/assets/_scss/liquidvisual/components/rem-calc";
+@import "liquidvisual/components/em-calc";
+@import "liquidvisual/components/rem-calc";
 
 //-----------------------------------------------------------------
-// BOOTSTRAP
+// BOOTSTRAP VARIABLES
 //-----------------------------------------------------------------
 
 @import "bootstrap/settings";
+
+//-----------------------------------------------------------------
+// BOOTSTRAP CORE
+//-----------------------------------------------------------------
+
 @import "bootstrap/bootstrap";
 
 //-----------------------------------------------------------------
-// LIQUIDVISUAL
+// LOCAL DEPENDENCIES
 //-----------------------------------------------------------------
 
-@import "../webvisual/assets/_scss/liquidvisual/components/alert-bar";
-@import "../webvisual/assets/_scss/liquidvisual/components/block-grid";
-@import "../webvisual/assets/_scss/liquidvisual/components/breadcrumb";
-@import "../webvisual/assets/_scss/liquidvisual/components/toolbox";
-@import "../webvisual/assets/_scss/liquidvisual/vendor/magnific-popup/main";
-@import "../webvisual/assets/_scss/liquidvisual/vendor/syntax-highlighting";
+@import "liquidvisual/components/alert-bar";
+@import "liquidvisual/components/block-grid";
+@import "liquidvisual/components/breadcrumb";
+@import "liquidvisual/components/toolbox";
+@import "liquidvisual/vendor/magnific-popup/main";
+// @import "liquidvisual/vendor/syntax-highlighting";
 
 //-----------------------------------------------------------------
 // APPLICATION
@@ -59,10 +65,9 @@
 @import "app/helpers/themes";
 
 //-----------------------------------------------------------------
-// BOWER DEPENDENCIES
+// NODE DEPENDENCIES
 //-----------------------------------------------------------------
 
-@import "/_bower_components/animate.css/animate.min.css";
-@import "../../_bower_components/font-awesome/scss/font-awesome";
-@import "../../_bower_components/social-feed/css/jquery.socialfeed";
-// @import "../_bower_components/slick.js/slick/slick";
+@import "font-awesome/scss/font-awesome";
+// @import "flickity/dist/flickity";
+// @import "social-feed/css/jquery.socialfeed";
