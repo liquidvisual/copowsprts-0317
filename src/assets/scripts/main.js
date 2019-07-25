@@ -1,5 +1,5 @@
 /*
-    MAIN.JS - Last updated: 10.04.19, 06.10.16
+    MAIN.JS - Last updated: 25.07.19, 10.04.19, 06.10.16
 */
 //-----------------------------------------------------------------
 // ON LOAD
@@ -8,7 +8,6 @@
 $(window).on('load', function() {
     // $('html').addClass('has-loaded');
     $('[data-masonry]').masonry();
-    lightbox();
 });
 
 //-----------------------------------------------------------------
@@ -44,30 +43,6 @@ function getParameterByName(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-
-//-----------------------------------------------------------------
-// POPUP GALLERY
-//-----------------------------------------------------------------
-
-function lightbox() {
-    $('.popup-gallery').magnificPopup({
-        delegate: 'li > a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small></small>';
-            }
-        }
-    });
 }
 
 //-----------------------------------------------------------------

@@ -1,0 +1,23 @@
+{% assign classes = include.classes %}
+
+<!-- FEATURED PROMOTIONS -->
+<section class="section section-dark {{ classes }}">
+	<div class="container">
+
+		{% include header_section.html title="Promotions" %}
+
+		<!-- MASONRY GALLERY -->
+		<div class="gallery" data-lightbox-group="Group #1">
+			<ul class="block-grid-xs-1 block-grid-md-3 list-masonry popup-gallery mb-4" data-masonry>
+				{% for i in (1..6) %}
+					<li>
+						<a data-link="https://google.com" title="" href="/assets/img/content/promo-{{i}}.jpg">
+							<img width="100%" src="/assets/img/content/promo-{{i}}.jpg" alt="Promo">
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+	</div>
+</section>

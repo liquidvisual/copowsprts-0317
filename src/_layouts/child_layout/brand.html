@@ -43,17 +43,4 @@ layout: base__page_microsite
 	</div>
 </section>
 
-<!-- FEATURED PROMOTIONS -->
-<section class="section section-dark is-flush-with-footer">
-	<div class="container">
-
-		{% include header_section.html title="Promotions" %}
-
-		<!-- MASONRY -->
-		<ul class="block-grid-xs-1 block-grid-md-3 list-masonry popup-gallery mb-4" data-masonry>
-			{% for i in (1..6) %}
-				<li><a title="Promo Title" href="/assets/img/content/promo-{{i}}.jpg"><img width="100%" src="/assets/img/content/promo-{{i}}.jpg" alt="Promo"></a></li>
-			{% endfor %}
-		</ul>
-	</div>
-</section>
+{% include promotions_section.html classes="is-flush-with-footer" %}
